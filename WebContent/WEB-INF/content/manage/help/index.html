@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../css/bodystyle.css" rel="stylesheet" type="text/css">
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<br><br>
+    <table width="90%" border="1" align="center" cellpadding="3" cellspacing="0" bordercolor="#FFFFFF"  style="border-collapse: collapse">
+      <tr>
+    <td width="100%" height="27" background="/../images/menu_bg.jpg"><p align="center" class="title"><strong>安装说明</strong></td>
+  </tr>
+  <tr>
+    <td width="100%" align="center"><div  style="width:100%; text-align:left; padding-left:15px; line-height:20px;">
+      <p>&nbsp; </p>
+      <p><span class="info1">一、首先请自行建好JSP服务器。单独运行或者与Apache集成都行(我用的是Tomcat + Apache)<br>
+          <br>
+    二、数据库选择：</span></p>
+      <p class="info1"> 1、如果选择Access数据库，打开 WEB-INF\classes\DBConfig.property 文件,修改 DBType 的值为0(即DBType=0;这也是默认值)，并修改Access数据库的路径。<br>
+        <br>
+  2、如果选择 MySql 数据库，则先请自行装MySql,并下载MYSQL 的JDBC驱动程序进行配置。<br>
+  调试好JSP + MYSQL 服务器。<br>
+  然后进入本文章系统所在的目录。<br>
+  在mysql 提示符下执行：\. YetNews_MySql.sql。<br>
+  修改 DBType 的值为,并设置你所使用的驱动程序。<br>
+  <br>
+  3、如果选择 SQL Server 数据库，则请先安装好SQL Server(安装时请选择混合模式验证),<br>
+  然后下载SQL Server 的JDBC驱动程序进行配置。<br>
+  注意在Win2003 Server上安装SQLServer2000，必须安装补丁sp3。<br>
+  调试好JSP + SQL Server 服务器。<br>
+  在查询分析器时执行 YetNews_SQL.sql 这个 SQL角本即可。<br>
+  修改 DBType 的值为2,并设置你所使用的驱动程序。</p>
+      <p class="info1">4、如果使用Oracle数据库，请各位自行解决。</p>
+      <p class="info1">5、注意：选择了数据库，一定要正确设置相应数据库的驱动程序，如果不清楚，请不要更改本系统<br>
+        默认值。      </p>
+      <p class="info1">由于时间关系，我只在Windows平台下测试用Tomcat,Resin测试过。程序能够正常运行。<br>
+    用Apache以及IIS集成以上软件也能正常运行。关于Linux下的运行，请各位自行调试，<br>
+    有什么意见请发往 yetnet@yahoo.cn 。本人不甚感谢。以后我肯定会在Linux平台下测试。<br>
+    <br>
+    由于个人精力和时间的关系，本文章系统难免存在许多不足之处，欢迎各位高手指正。</p>
+      <p class="info1"><br>
+          <br>
+          <br>
+      </p>
+    </div>
+</td>
+  </tr>
+</table>
+<br><br>
+</body>
+</html>

@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding:0;margin:0}
+
+#foot {/*页脚*/
+    clear:both;
+	width:1000px;
+	z-index:2;
+	height:60px;
+	font-size:14px;
+	/*background-image:url(../images/bg_copyright.gif);*/
+	background-color:#BD0000;
+}
+#foot #content{
+	float:left;
+	width:100%;
+	text-align:center;
+	margin:3px 0 0 0;
+	height:57px;
+	background-image:url(../images/bg_1.gif);
+	background-repeat:repeat-x;
+	}
+#foot span{/*底部版权字格式*/
+	font-family:"Arial,Helvetica,sans-serif";
+	font-weight: lighter;
+}
+
+a:link {color:#000;text-decoration:none;}	/* 未访问的链接 */
+a:visited {color:#000;text-decoration:none;}	/* 已访问的链接 */
+a:hover {color:#F00;}	/* 鼠标移动到链接上 */
+a:active {color: #0000FF}	/* 选定的链接 */
+
+
+
+
+

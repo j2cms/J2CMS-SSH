@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding:0;margin:0}
+
+body{/*浏览器整个主体*/
+	background-image:url(../images/60_bg.jpg);
+	font-size:12px;
+}
+#head {/*页面头部*/
+	margin:0px auto 0px auto;
+	float:left;
+	width:1000px;
+	height:185px;
+}
+.banner{/*页面头部图片*/
+	float:left;
+    width:1000px;
+    height:160px;
+    background-image:url(../images/cs/1.jpg);
+    background-repeat:no-repeat;
+}
+
+
+

@@ -1,0 +1,7 @@
+/.settings
+/build
+.buildpath
+/.classpath
+/.project
+/WebContent/WEB-INF/classes
+/src/com

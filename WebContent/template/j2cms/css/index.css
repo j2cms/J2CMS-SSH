@@ -1,0 +1,355 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	 
+	}
+/*------------------------------------------------------------------------------------------------------------------*/
+#main-left {/*页面主要内容左边部分*/
+    float:left;
+	margin-bottom:3px;
+	width:722px;
+	z-index:2;
+}
+#main-center {/*页面主要内容左边上部*/
+    float:left;
+	margin:0;
+	margin-bottom:2px;
+	width:1000px;
+	height:auto;
+	z-index:2;
+}
+#imageNews {/*页面主要内容左边部分FLASH图片文章*/
+	float:left;
+	margin:0 2px 2px 0;
+	width:300px;
+	height:260px;
+	z-index:2;
+	border: solid 1px #CCCCCC;
+	
+}
+#systemInfo {/*栏目切换模块*/
+	float:left;
+	width:385px;
+	height:260px;
+	margin:0 2px 0 2px;
+	background-image:url(../images/systemInfo0.jpg);
+	background-repeat:no-repeat;
+	z-index:2;
+	border: solid 1px #CCCCCC;
+}
+#newNews{
+	float:left;
+	width:368px;
+	height:21px;
+	margin:0 2px 0 2px;
+	padding-left:12px;
+	border-bottom: #c2130e solid 3px;
+	font:bold 12px/23px Arial, Helvetica, sans-serif;
+}
+#systemInfo ul {/*文章栏*/
+	margin:auto auto auto 20px;
+	padding:0px;
+	width:350px;
+}
+
+#systemInfo li{
+	list-style: none;
+	display: block; 
+	width: 345px;
+	height:auto;
+	line-height: 25px;
+
+	border-bottom: #993300 dotted 1px;
+	
+	}
+
+
+#tagChange {/*栏目切换模块*/
+	float:left;
+	width:302px;
+	height:260px;
+	z-index:2;
+	border: solid 1px #CCCCCC;
+}
+#systemAd{
+	float:left;
+	margin:2px 0 0 0;
+	width:722px;
+	}
+/*--------------------------------------------------------------------rgb(183,183,183----*/
+.news{/*放文章的框架格式*/
+	float:left;
+	margin:0px 3px 8px 2px;
+	width: 351px;
+	height: 170px;
+	border: solid 1px #CCCCCC;
+
+}
+.newsTitle
+{
+	float:left;
+	width:100%;
+	height:20px;
+	text-align:left;
+	border-bottom: 2.5px solid #cad7df;
+	padding-top:5px;
+	font-size: 14px;
+	font-weight:bold;
+	background-image:url(../images/title-bg.gif);
+}
+.news img {/*文章栏框架说明图*/
+	margin:5px 195px 15px 5px;
+	background-color:#CCC;
+}
+.newsMore{/*文章栏“更多”链接*/
+	float:left;
+	text-align:right;
+	font-size: 12px;
+}
+.news ul {/*文章栏*/
+	margin:auto auto auto 20px;
+	padding:0px;
+	width:330px;
+	list-style-type: none;
+
+}
+
+.news li{
+	float:left;
+	list-style-type: none;
+	list-style: none;
+	overflow:hidden
+	display: block; 
+	width: 320px;
+	height:auto;
+	line-height: 25px;
+	text-indent: 25px;
+	border-bottom: #993300 dotted 1px;
+	background:url(../images/arrow5.gif) left  no-repeat ;
+	}
+.li1{
+	background:url(../images/arrow2.gif) left  no-repeat;
+
+	}
+.li2{
+	background:url(../images/hot.gif) left no-repeat;
+
+	}
+
+
+.news li a,#informpart a,#link a{/*文章条目，友情链接，以及重要通知栏目链接*/
+	text-decoration:none;
+
+	color:#333333;
+
+	
+	font-size: 12px;
+}
+.news li a:hover,#informpart a:hover,#link a:hover{/*文章条目，友情链接，以及重要通知栏目链接在鼠标经过时的样子*/
+	color:#F30;
+	text-decoration: none;
+	font-size: 12px;
+}
+.news a,#link a strong,#link a span{/*文章栏,以及友情链接栏中”更多“链接*/
+	text-decoration:none;
+	color:#900;
+	font-size: 18px;
+}
+.news a:hover {/*”更多“链接在鼠标经过时的样子*/
+	text-decoration:underline;
+}
+.news span{padding:0 ; font-size:12px;color:#1f3a87;} 	/*时间显示样式*/
+.newgif{
+	margin-top:-20px;
+	margin-right:0;
+	}
+.newfont{
+	color:#F00;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	}
+/*-----------------------------------------------------------------------------------------------------------*/
+#iconograph {/*页面主体左部分隔图片*/
+	float:left;
+	margin:2px auto 2px auto;
+	width:722px;
+	z-index:2;
+}
+#iconograph img{/*页面主体左部分隔图片*/
+	width: 100%;
+	border: 0px solid #CCCCCC;
+}
+#flash3{/*页面头部FLASH定位*/
+	margin:-82px auto auto auto;
+	float:left;
+	width:722px;
+	height:82px;
+}
+
+/*/*右侧模块开始---------------------------------------------------------------------------*/
+#main-right {/*页面主要内容右边部分*/
+    float:left;
+	margin:0 2px 6px 0;
+	width:272px;
+	height:auto;
+	z-index:2;
+
+}
+.rigth_title{
+	float:left;
+	width:99%;
+	background-image:url(../images/title-bg.gif);
+	font: bold 14px "Arial,Helvetica,sans-serif";
+	text-align:justify;
+	padding:2px 0 2px 2px;
+	color:#000000;
+	}
+#rigth_Member_title{
+	float:left;
+	width:99%;
+	background-image:url(../images/title-bg.gif);
+	font: bold 14px "Arial,Helvetica,sans-serif";
+	text-align:justify;
+	padding:2px 0 2px 2px;
+	color:#FF0000;
+	}
+.rigth_title_font{
+	color:#FF0000;
+	font: bold 14px "Arial,Helvetica,sans-serif";
+	}
+
+
+
+#denglu {/*页面主体右部教师登录模块*/
+	float:left;
+	margin:0;
+	width:100%;
+	height:145px;
+	z-index:2;
+	border: solid 1px #CCCCCC;
+}
+
+.dengluInput{
+	height:25px;
+	margin:5px auto 5px auto;
+	text-align:center;
+	}
+
+.sText { margin:0 0 0 4px; padding:4px 0 2px 0;font-size:12px; color:#333333; border: 1px solid #296CBC; width:120px; }
+
+
+
+
+#right-piece1{
+	float:left;
+    margin:2px auto;
+	width:272px;
+	height:175px;
+	z-index:2;
+	border: solid 1px #CCCCCC;
+}
+#right-piece1-content{
+	float:left;
+	border: solid 1px #CCCCCC;
+	padding:8px;
+	font:14px bold;
+	border:0px;
+	color:#1f3a87;
+	}
+#right-piece2{
+	float:left;
+    margin:2px auto;
+	width:100%;
+	height:167px;
+	z-index:2;
+	border: solid 1px #CCCCCC;
+}
+#right-piece2-content{
+	float:left;
+	border: solid 0px;
+	padding:20px;
+	font:20px bold;
+	border:0px;
+
+	}
+	
+#right-piece3{
+}
+#right-piece4{
+}
+
+
+#search {/*页面主体右部站内搜索模块*/
+/*	float:left;
+    margin:2px auto;
+	width:100%;
+	z-index:2;
+	border: solid 1px #CCCCCC;
+*/	
+}
+
+
+
+
+#Google_fun {/*类似Google特色效果*/
+	float:left;
+	margin:12px 0;
+	width:100%;
+	z-index:2;
+	border: solid 0px #CCCCCC;
+}
+
+#imglink {/*页面主要内容右边部分的图片链接（信箱之类）*/
+	float:left;
+	margin:3px 2px 2px 0;
+	width:100%;
+	z-index:2;
+	border: solid 0px #CCCCCC;
+}
+.img1{/*图片链接一的样式*/
+	width: 131px;
+	height: 131px;
+	border: solid 0px;
+}
+.img2{/*图片链接二的样式*/
+	width: 131px;
+	height: 40px;
+	border: solid 0px;
+}
+/*--图片边框变化------------------------------*/
+
+#imglink a:hover {
+
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+#link {/*页面主体右部友情连接模块*/
+	float:left;
+	margin:0 2px 2px 0;
+	text-align:center;
+	width:100%;
+	z-index:2;
+	border: solid 0px #CCCCCC;
+}
+.img3{/*链接图片的样式*/
+	float:left;	
+	width:250px;
+	height: 41px;
+	margin:2px;
+	border: solid 0px #FFF;
+	text-align:center;
+}
+.link_img{/*链接图片的样式*/
+	width:80%;
+	height: 41px;
+	border: solid 1px #FFF;
+}
+/*--图片边框变化------------------------------*/
+
+#link a:hover {
+	border:1px solid #C8C8C8;
+}
+

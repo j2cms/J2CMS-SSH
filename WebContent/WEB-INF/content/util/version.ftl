@@ -1,0 +1,1 @@
+<a href="http://www.j2cms.org" target="_blank" title="最新版本">${(C.version)!"www.j2cms.org"}</a>

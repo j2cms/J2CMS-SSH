@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; COLOR: black;  
+}
+.dis {
+	DISPLAY: block
+}
+.undis {
+	DISPLAY: none
+}
+#cntR {
+	WIDTH: 302px
+}
+#NewsTop { height:200px;
+	CLEAR: both; MARGIN-BOTTOM: 6px;TEXT-ALIGN: center
+}
+#NewsTop P {
+	FLOAT: left; LINE-HEIGHT: 21px
+}
+#NewsTop P.topTit {
+	FONT-WEIGHT: bold; WIDTH: 117px
+}
+#NewsTop P.topC0 {
+	BACKGROUND: #dcdcdc; BORDER-LEFT: #f2f2f2 1px solid; WIDTH: 91px; CURSOR: pointer
+}
+#NewsTop P.topC1 {
+	BACKGROUND: #c2130e; BORDER-LEFT: #f2f2f2 1px solid; WIDTH: 92px; COLOR: #fff
+}
+#NewsTop #NewsTop_tit {
+	BORDER-BOTTOM: #c2130e 3px solid; HEIGHT: 21px
+}
+#NewsTop #NewsTop_cnt {
+	PADDING-LEFT: 32px; BACKGROUND: url(../images/1-10.gif) no-repeat 12px 5px; LINE-HEIGHT: 23px; PADDING-TOP: 1px; HEIGHT: 300px; TEXT-ALIGN: left
+}
+#NewsTop #NewsTop_cnt A {
+	COLOR: #666; TEXT-DECORATION: none
+}
+#NewsTop #NewsTop_cnt A:hover {
+	COLOR: #c2130e; TEXT-DECORATION: underline
+}
+

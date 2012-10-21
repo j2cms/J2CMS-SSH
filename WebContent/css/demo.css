@@ -1,0 +1,168 @@
+*{padding:0;margin:0}
+img{
+	vertical-align:middle;
+}
+button,input,select,value {
+	 vertical-align:middle;
+	 height:30px;
+	 line-height:28px;  
+}
+
+
+
+A:LINK{ color:#313163;font: 12px Arial,Helvetica,sans-serif;text-decoration:none;}
+
+A:VISITED{ color:#313163;font:12px Arial,Helvetica,sans-serif;text-decoration:none;}
+
+A:HOVER{color:#d53030;font: 12px Arial,Helvetica,sans-serif;text-decoration:none;}
+
+.tex001{
+      font-family: "Arial,Helvetica,sans-serif"; font-size: 12px; line-height: 150%; color: #000066;
+      text-decoration:none
+      }
+.tex002{
+     font-family: "Arial,Helvetica,sans-serif"; font-size: 12px; line-height: 150%; color:#999999
+     }
+.tex003{
+     font-family: "Arial,Helvetica,sans-serif"; font-size: 12px; line-height: 150%; color:#000000
+     }
+.tex004{
+     font-family: "Arial,Helvetica,sans-serif"; font-size: 12px; line-height: 150%; color: #666666
+     }
+.tex005 {
+      font-family:"Arial,Helvetica,sans-serif"; font-size: 14px; line-height: 150%;
+      font-weight: bold; color: #333399
+     }
+.tex006{
+     font-family:"Arial,Helvetica,sans-serif"; font-size: 12px; line-height: 150%; color: #ffffff
+     }
+.tex007{
+     font-family: "Arial,Helvetica,sans-serif"; font-size: 14px; line-height: 150%; color: red; text-decoration:none
+    }
+.tex008{
+      font-family: "Arial,Helvetica,sans-serif"; font-size: 12px; line-height: 150%; color: red; text-decoration:none
+    }
+.red{
+    font-family: "Arial,Helvetica,sans-serif"; font-size: 12px; line-height: 150%; color: #CC0000
+    }
+.blue {
+    font-family: "Arial,Helvetica,sans-serif"; font-size: 12px; line-height: 150%; color: #333399; text-decoration: none
+    }
+.black {
+    font-family: "Arial,Helvetica,sans-serif"; font-size: 12px; line-height: 150%; color: #666666; text-decoration: none
+   }
+.tex {
+    font-family: "Arial,Helvetica,sans-serif"; font-size: 12px; line-height: 150%; color: #000000; text-decoration: none
+   }
+
+
+.toolBar {
+	/*
+	background:		ButtonFace;
+	*/
+	background-image:url(../images/menu_bg.jpg);
+	border-style:		solid;
+	border-width:		1px;
+	border-left-color:	ButtonHighlight;
+	border-right-color:	ButtonShadow;
+	border-top-color:	ButtonHighlight;
+	border-bottom-color:    ButtonShadow;
+	font-family: "Arial,Helvetica,sans-serif";    font-size: 12px;
+	width:inherit;
+
+}
+
+.toolTable {
+
+	border-style:		solid;
+	border-width:		1px;
+	border-left-color:	ButtonShadow;
+	border-right-color:	ButtonShadow;
+	border-top-color:	ButtonShadow;
+	border-bottom-color:    ButtonShadow;
+	font-family: "Arial,Helvetica,sans-serif";    font-size: 12px;
+
+}
+.toolTableMei {
+
+	border-style:		solid;
+	border-width:		1px;
+	border-left-color:	ButtonShadow;
+	border-right-color:	ButtonShadow;
+	border-top-color:	ButtonShadow;
+	border-bottom-color:    ButtonShadow;
+	font-family: "Arial,Helvetica,sans-serif";    font-size: 14px;
+
+}
+
+/* extra rules for even and odd rows */
+.colom {
+	/*background:		ButtonFace;
+	*/
+	background-color:#d6dff7;
+	border-style:		solid;
+	border-width:		1px;
+	border-left-color:	ButtonHighlight;
+	border-right-color:	ButtonShadow;
+	border-top-color:	ButtonHighlight;
+	border-bottom-color:    ButtonShadow;
+	font-family: "Arial,Helvetica,sans-serif";    font-size: 12px;
+
+}
+.colomMei {
+	/*background:		ButtonFace;
+	*/
+	background-color:#d6dff7;
+	border-style:		solid;
+	border-width:		1px;
+	border-left-color:	ButtonHighlight;
+	border-right-color:	ButtonShadow;
+	border-top-color:	ButtonHighlight;
+	border-bottom-color:    ButtonShadow;
+	font-family: "Arial,Helvetica,sans-serif";    font-size: 16px;
+
+}
+
+.even {
+	background:	#eee;
+}
+
+.odd {
+
+}
+.row{
+	background-color:#EBEBEB;
+	}
+
+/* */
+.INPUT {
+        width:                  70px;
+	border-width:		1px;
+	border-left-color:	ButtonShadow;
+	border-right-color:	ButtonShadow;
+	border-top-color:	ButtonShadow;
+	border-bottom-color:    ButtonShadow;
+}
+.ChkBox {
+	border-width:		1px;
+	border-left-color:	ButtonShadow;
+	border-right-color:	ButtonShadow;
+	border-top-color:	ButtonShadow;
+	border-bottom-color:    ButtonShadow;
+}
+#intPageSize{
+	width:25px;
+}
+#topLevel{
+	width:30px;
+}
+#articleID{
+	width:80px;
+}
+#relatedID{
+	width:360px;
+}
+#summary{
+	width:800px;
+}
+

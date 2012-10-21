@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+/* 链接颜色 */
+A:link {
+	COLOR: #457FFC; TEXT-DECORATION: none; font-family: "Arial,Helvetica,sans-serif"; font-size: 9pt
+}
+A:visited {
+	COLOR: #457FFC; TEXT-DECORATION: none; font-family: "Arial,Helvetica,sans-serif"; font-size: 9pt
+}
+A:active {
+	COLOR: #FF0000; TEXT-DECORATION: none; font-family: "Arial,Helvetica,sans-serif"; font-size: 9pt
+}
+A:hover {
+	COLOR: #6600FF; TEXT-DECORATION: underline; font-family: "Arial,Helvetica,sans-serif"; font-size: 9pt
+}
+
+.news a:link{ COLOR:#555555; TEXT-DECORATION: none; font-family: "Arial,Helvetica,sans-serif"; font-size: 12px}
+.news a:visited{COLOR:#336699; TEXT-DECORATION: none; font-family: "Arial,Helvetica,sans-serif"; font-size: 12px}
+.news a:hover{COLOR: #ff6600; TEXT-DECORATION: underline; font-family: "Arial,Helvetica,sans-serif"; font-size:12px}
+.news a:active{COLOR:#ff0000; TEXT-DECORATION: none; font-family: "Arial,Helvetica,sans-serif"; font-size: 12px}
+
+
+/*页面属性*/
+BODY {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-size:12px;
+	
+	color:#364f56;
+	MARGIN: 0px; 
+	SCROLLBAR-HIGHLIGHT-COLOR:#d6dff7;
+	SCROLLBAR-ARROW-COLOR:#215dc6;
+	SCROLLBAR-TRACK-COLOR:#d6dff7;
+	SCROLLBAR-BASE-COLOR:#AEC6F0;
+}
+
+
+/*按钮属性*/
+.button {
+	BORDER-RIGHT: #457FFC 1px ridge;
+	PADDING-RIGHT: 1px;
+	BORDER-TOP: #ffffff 1px ridge;
+	PADDING-LEFT: 1px;
+	FONT-SIZE: 9pt;
+	PADDING-BOTTOM: 1px;
+	BORDER-LEFT: #ffffff 1px ridge;
+	COLOR: #000000;
+	PADDING-TOP: 1px;
+	BORDER-BOTTOM: #457FFC 1px ridge;
+	FONT-FAMILY: "Arial,Helvetica,sans-serif";
+	HEIGHT: 20px;
+	BACKGROUND-COLOR: #f1f1f1;
+	cursor: hand;
+}
+
+/*文字属性*/
+.chinese
+{
+    FONT-FAMILY: "Arial,Helvetica,sans-serif";
+	color:#333333;
+}
+
+/*标题属性*/
+.title {
+	font-family: "Arial,Helvetica,sans-serif";
+
+	}
+	
+/*提示信息字体属性*/
+.info1
+{ 
+	color:#FA605E;
+}
+
+/*表格属性*/
+table { 
+	background-color:;
+	border-color:#b4cfcf;
+	border-collapse:collapse;
+	border-top-color:#457FFC;
+	border-right-color:#457FFC;
+	border-left-color:#457FFC;
+	border-bottom-color:#457FFC;
+	}
+	
+tr { border-color:#b4cfcf;
+	font-size:12px;
+
+}
+td { border-color:#b4cfcf; 
+}	
+
+#Content {
+	margin:5px 0 0 0; 
+	width:778px;
+	border:1px solid #959595;
+	background-color:#FFFFFF; 
+	font-family:"Arial,Helvetica,sans-serif";
+	
+}
+
+#Content #NewsContent{ margin:20px; background-color:#FFFFFF; color:#333333; padding:5px 20px 30px 20px;text-align:left; line-height:20px;};
+
+.codeImg{
+	cursor:pointer;
+}

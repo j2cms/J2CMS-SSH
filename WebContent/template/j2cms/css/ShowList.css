@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:#f5e5cf;
+	}
+/*-table和td使用框贺出现效果--------------------------------------------------------------------------------------*/
+TABLE {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-COLLAPSE: collapse; BORDER-RIGHT-WIDTH: 0px; border-spacing: collapse
+}
+TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 13px; PADDING-BOTTOM: 0px; COLOR: #333; LINE-HEIGHT: 150%; PADDING-TOP: 0px;
+}
+/*----------------------------------------------------------------------------------------*/
+.newsList{/*放文章的框架格式*/
+	margin:0px;
+	width: 590px;
+	height:390px;
+	border: 0;
+}
+.newsList img {/*文章栏框架说明图*/
+	margin:3px 195px 3px 3px;
+}
+.newsList strong{/*文章栏“更多”链接*/
+	font-size: 12px;
+}
+.newsList ul {/*文章栏*/
+	width:500px;
+	height:210px;
+	list-style: none;
+	padding-left:40px;
+}
+.newsList li {/*文章条目*/
+	width:480px;
+	height:18px;
+	background-color:#63C;
+	border-bottom-color: #993300;
+	border-bottom-style:dotted;
+	border-bottom-width:1px;
+	background:url(../images/arrow.gif) no-repeat;
+	margin-bottom:8px;
+	font-size: 14px;
+}
+.newsList li a,#informpart a,#link a{/*文章条目，友情链接，以及重要通知栏目链接*/
+	text-decoration:none;
+	color:#000000;
+	font-size: 12px;
+}
+.newsList li a:hover,#informpart a:hover,#link a:hover{/*文章条目，友情链接，以及重要通知栏目链接在鼠标经过时的样子*/
+	color:#C33;
+	text-decoration: none;
+
+	font-weight:bold;
+	
+}
+.newsList a,#link a strong,#link a span{/*文章栏,以及友情链接栏中”更多“链接*/
+	text-decoration:none;
+	color:#900;
+	font-size: 18px;
+}
+.newsList a:hover {/*”更多“链接在鼠标经过时的样子*/
+	text-decoration:underline;
+}
+
+
+a:link {
+	color:#00F; text-decoration: none
+}
+a:visited {
+	color: #333333; text-decoration: none
+}
+a:active {
+	color:#60F; text-decoration: none
+}
+a:hover {
+	color: #ff6600; text-decoration: underline;
+}
+.red_bold{color:#F00; font-weight:bold;}
+.red_normal{color:#F00; font-weight:normal;}
+
+
+

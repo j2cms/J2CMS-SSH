@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+.all-IE{property:value\9;}
+:root .IE-9{property:value\0/;}
+.gte-IE-8{property:value\0;}
+.lte-IE-7{*property:value;}
+.IE-7{+property:value;}
+.IE-6{_property:value;}
+.not-IE{property//:value;}
+@-moz-document url-prefix() { .firefox{property:value;} }
+@media all and (-webkit-min-device-pixel-ratio:0) { .webkit{property:value;} }
+@media all and (-webkit-min-device-pixel-ratio:10000),not all and (-webkit-min-device-pixel-ratio:0) { .opera{property:value;} }
+@media screen and (max-device-width: 480px) { .iphone-or-mobile-s-webkit{property:value;} }
+
+
+
+*{padding:0;margin:0}
+
+body{/*浏览器整个主体*/
+	
+	
+	BACKGROUND-COLOR: white;
+	/*
+	background:url(../images/bg_0.gif);
+	*/
+	font-size:12px;
+}
+
+#container{/*页面主体*/
+	width: 1000px;
+	z-index:5;
+	margin-left:auto;
+	margin-right:auto;
+}
+.banner{/*页面头部图片*/
+/*	float:left;
+
+    width:1000px;
+	height:150px;
+*/	
+}
+
+#main {/*页面主体部分（放置页面链接）*/
+    float:left;
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	height:auto;
+	z-index:2;
+	border: solid 1px #ffffff;
+
+}
+	
+.copyright{
+    margin:0;
+	clear:both;
+	float:left;
+	width:1000px;
+}
+
+

@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-image:url(../images/menu_bg.jpg);
+	}
+
+#left {/*页面左边 #cccccc*/	
+	float:left;
+	margin:2px auto;
+	width:268px;
+	height:auto;
+	z-index:2;	
+}
+#navigation {/*页面左边的垂直导航条*/
+	margin-right:1px;
+	width:266px;
+	height:100%;
+	z-index:5;
+
+	background-image: url(../images/navigationbg.jpg);
+}
+#navigation ul{/*页面左边的垂直导航条采用列表格式*/
+	margin: 1px;
+	padding: 0px;
+	list-style: none;
+}
+#navigation li.special{/*页面左边的垂直导航条最上部的页面标题*/
+
+	font-family: "华文细黑";
+	font-size: 25px;
+	color: #FFFFFF;
+	border-bottom: 2.5px solid #cad7df;
+	padding-top: 45px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+}
+#navigation li.normal{/*页面左边的垂直导航条下面的导航部分*/
+	border-bottom: 1px solid #cad7df;
+	font-size:15px;
+}
+#navigation li.normal a{/*页面左边的垂直导航条每一个导航栏采用区块显示*/
+	display: block;
+	padding: 3px 5px 3px 50px;
+	text-decoration: none;
+}
+#navigation li.normal a:link,#navigation li.normal a:visited{/*页面左边的垂直导航条每一导航栏在鼠标点击之后的效果*/
+	font-family:"华文细黑";
+	font-weight:bold;
+	color:#F93;
+}
+#navigation li.normal a:hover{/*页面左边的垂直导航条每一导航栏在鼠标经过时候的效果*/
+
+	font-size:110%;
+	font-weight:bolder;
+	/*background-color: #993300;background-color:#BD0000;*/
+	color:#FFF;
+	background-image:url(../images/linkbg1.jpg);
+
+	
+}
+
+#main1 {/*内部链接页面*/
+float:left;
+width:729px;
+margin:2px 0 0 2px;
+background-color:#f5e5cf;
+
+
+}
+#mhead1{/*内部链接页面的头最左边的部分*/
+	background-image: url(../images/linkbg1.jpg);
+	border: solid 0px #ffffff;
+	border-top-width: 0px;
+}
+#mhead2{/*内部链接页面的头右边的部分*/
+	background-image: url(../images/linkbg2.jpg);
+	border: solid 0px #ffffff;
+	border-top-width: 0px;
+	height:30px;
+}
+
+#mhead2 a,.menu li a{/*内部链接页面的头右边指示所在页面位置的提示信息相关链接,主链接*/
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#mhead2 a:hover,.menu li a:hover{/*内部链接，以及主链接，在鼠标经过时的效果*/
+	color: #FFFF00;
+	text-decoration: underline;
+}
+#mhead2 span{/*内部链接页面的头右边指示所在页面位置的提示信息*/
+	color: #FFFFFF;
+	font-family:华文细黑;
+	font-size:15px;
+}
+#mbody{/*内部链接页面主体*/
+	border: 1px solid #993300;
+}
+img.left{/*链接页面主体左上角图片*/
+	float: left;
+	
+}
+img.right{/*链接页面主体右下角图片*/
+	float: right;
+}
+#teachermsg{/*用表格显示教师信息（表格位置）*/
+	position: relative;
+	left: 2%;
+	top: 25px;
+}
+.teacherp{/*教师照片向左浮动*/
+	float: left;
+}
+

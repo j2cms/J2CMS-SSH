@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+#picSlider {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; WIDTH: 357px; BORDER-BOTTOM: red 0px solid; HEIGHT: 299px;
+	FONT-SIZE: 12px; COLOR: #993300; LINE-HEIGHT: 180%; FONT-FAMILY: Arial,Helvetica,sans-serif; BACKGROUND-COLOR: white
+}
+#n_list {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; WIDTH: 357px; BORDER-BOTTOM: red 0px solid; HEIGHT: 299px
+}
+#picSlider DL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FILTER: alpha(opacity=100); PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; PADDING-TOP: 0px; HEIGHT: 299px; opacity: 1
+}
+#picSlider DL DT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; PADDING-TOP: 0px; HEIGHT: 277px
+}
+#picSlider DL DD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 20px; BACKGROUND: #fff; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #000; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+#picSlider IMG {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+#picContorl {
+	FILTER: alpha(opacity=50); MARGIN: 256px 0px 0px; WIDTH: 357px; POSITION: absolute; HEIGHT: 20px; TEXT-ALIGN: right; opacity: 0.5; -moz-opacity: 0.5
+}
+#picContorl SPAN {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND: silver; PADDING-BOTTOM: 3px; MARGIN: 0px 3px; CURSOR: pointer; COLOR: #000; LINE-HEIGHT: 20px; PADDING-TOP: 3px
+}
+#picContorl SPAN.slect {
+	COLOR: #ffffff; BACKGROUND-COLOR: red
+}
+
+

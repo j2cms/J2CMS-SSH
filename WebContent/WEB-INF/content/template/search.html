@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>${entity.name!""}-${C.name!"J2CMS"}</title>
+<link href="/template/j2cms/css/common.css" rel="stylesheet" type="text/css" />
+<link href="/template/j2cms/css/Search.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="/template/j2cms/js/setHeight.js" type="text/javascript"></script>
+<script language="javascript">
+function pageQuery(page) {
+	  
+		 location.href = "/search?id=${entity.id}&title=${title!""}&page="+page;
+}
+</script>
+</head>
+<body>
+<div id="container">
+	<#include "/head.html" parse=false encoding="UTF-8">
+<div id="main">
+    <div id="left" class="left">
+            <#include "/left.html" parse=false encoding="UTF-8">
+    </div><!--left end-->
+
+    <div id="main1" class="main1">
+        <div id="ShowNews">
+        <div id="Pos">&nbsp;<a href="/"><@s.text name="index"/></a><img src="/template/j2cms/images/pos.gif" border=0 />
+        <a href="/${entity.id?c}.html">${entity.name!""}</a>&nbsp;
+        <#if title??&&title!=''>[关键字:<font class="red_normal">${title}</font>]</#if>
+		</div>
+				<div id="News">
+                    <ul>
+                    <#list searchPageView.records as article>
+                     <li><img src="/template/j2cms/images/arrow_01.gif"/> 
+                     <a href="/Article/${article.id?c}.html" title="${article.title}" target="_blank">${(article.title)!""}</a>
+                     <span>[${(article.releaseDate)!""}]</span></li>
+                     </#list>
+                    </ul>
+                 </div>
+           
+                 <table width="590" align="center" >
+                    <tr>
+                    <td align="center">页次&nbsp;<font class="red_normal">${searchPageView.currentpage}/${(searchPageView.totalpage)?c}</font>
+                    &nbsp;&nbsp;每页&nbsp;<font class="red_normal">${searchPageView.maxresult}</font>&nbsp;条&nbsp;&nbsp;共&nbsp;
+                    <font class="red_normal">${(searchPageView.totalrecord)?c}</font>&nbsp;条</td>
+                    <td align="center">
+                   <#if (searchPageView.currentpage>1)>
+                   	<a  href='#' onClick='pageQuery(1)' >最前页</a>
+                    <a  href='#' onClick="pageQuery(${searchPageView.currentpage-1})"  >上一页</a>
+                   </#if>
+                  <#if searchPageView.currentpage==1>
+                   		 最前页&nbsp;上一页
+                  </#if>
+                  <#if searchPageView.currentpage<searchPageView.totalpage>
+                   <a  href='#' onClick='pageQuery(${searchPageView.currentpage+1})' >下一页</a>
+                   <a  href='#' onClick="pageQuery(${searchPageView.totalpage})"  >最后页</a>
+                  </#if>
+                  <#if searchPageView.currentpage==searchPageView.totalpage>
+    			              下一页&nbsp;最后页
+       			  </#if>
+                    
+                    </td>
+                    </tr>
+                   </table>
+				
+        </div>	<!--ShowNews end-->
+     </div><!--main1 end-->
+
+</div><!--main end-->
+<div id="copyright">
+    <#include "/foot.html" parse=false encoding="UTF-8">
+</div>
+  
+</div><!--container end-->
+</body>
+</html>

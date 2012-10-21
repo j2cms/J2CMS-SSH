@@ -1,0 +1,87 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #364f56; PADDING-TOP: 0px; BACKGROUND-COLOR: #ffffff
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+UNKNOWN {
+	BORDER-RIGHT: #d4d0c8 1px solid; BORDER-TOP: #404040 1px solid; BORDER-LEFT: #404040 1px solid; BORDER-BOTTOM: #d4d0c8 1px solid
+}
+UNKNOWN {
+	HEIGHT: 17px
+}
+UNKNOWN {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid
+}
+UNKNOWN {
+	BORDER-RIGHT: #666 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #ddd 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 12px; BACKGROUND: #ddd; PADDING-BOTTOM: 1px; BORDER-LEFT: #ddd 1px solid; COLOR: #000; PADDING-TOP: 1px; BORDER-BOTTOM: #666 1px solid
+}
+A {
+	TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #364f56
+}
+A:visited {
+	COLOR: #333333
+}
+A:hover {
+	COLOR: #ae0927
+}
+A:active {
+	COLOR: #0000ff
+}
+A.channel:link {
+	COLOR: #ffffff
+}
+A.channel:visited {
+	COLOR: #ffffff
+}
+A.channel:hover {
+	COLOR: #ffff00
+}
+A.channel:active {
+	COLOR: #ffffff
+}
+A.normal {
+	TEXT-DECORATION: underline
+}
+.clear {
+	CLEAR: both
+}
+.body-box {
+	MARGIN: 0px auto; WIDTH: 99%
+}
+.lbody {
+	BACKGROUND: url(../../admin/img/admin/lbg.jpg) #f4f7fb repeat-y right 50%; COLOR: #666666; MARGIN-RIGHT: 6px
+}
+.lmenu {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 10px 0px 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+li {
+	height:40px;
+}
+.lmenu A {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 30px; BACKGROUND: url(../../admin/img/admin/circle.gif) no-repeat 15px -1px; PADDING-BOTTOM: 7px; PADDING-TOP: 7px
+}
+.lmenu-focus {
+	BACKGROUND-COLOR: #ddecef
+}
+.lttop {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; PADDING-TOP: 10px; TEXT-ALIGN: center
+}
+.rhead {
+	BORDER-RIGHT: #b4cfcf 1px solid; PADDING-RIGHT: 15px; BORDER-TOP: #b4cfcf 1px solid; MARGIN-TOP: 5px; PADDING-LEFT: 15px; PADDING-BOTTOM: 5px; BORDER-LEFT: #b4cfcf 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #b4cfcf 1px solid
+}
+.rpos {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 20px; BACKGROUND: url(../../admin/img/admin/arrow.gif) no-repeat left center; FLOAT: left; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.ropt {
+	FLOAT: right
+}
+.cms_logo{
+	background-repeat: x;	
+}

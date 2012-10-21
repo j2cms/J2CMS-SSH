@@ -1,0 +1,32 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div id="gjss"><div id="stFont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高级搜索</div></div>
+<div id="HSearch"> 
+<form name="searchForm" method="post" action="/search" class="sForm">
+<br>
+	<table border="0">
+	<tr>
+		<td>
+		<span>栏&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目：</span>
+	    <select name="id" size="1" id="id" class="sSelect">
+	  	<option value="1">全部</option>
+	  	<#if channelsDisplay??>
+	  	<#list channelsDisplay as c>
+			<option value="${c.id}">|--${c.name}</option>
+		</#list>
+		</#if>	
+	    </select>
+	  <script>document.getElementById("id").value ='${(channel.id)!1}';</script>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<span>标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;题：</span>
+	    <input name="title" type="text" value='${title!""}' maxlength="20" class="sText"/> 
+	    <input type="submit" name="Submit" value="&nbsp;&nbsp;搜&nbsp;&nbsp;索&nbsp;&nbsp;" class="sbutton"/>
+		</td>
+	</tr>
+	</table>
+	 
+</form>
+</div><!--HSearch end -->
+

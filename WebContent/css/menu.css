@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* css document */
+
+body {
+	background: url(../../admin/img/admin/lbg.jpg) #f4f7fb repeat-y right 50%;
+	color: #666666;
+	margin-right: 6px;
+	font-size:16px;
+}
+ul{
+}
+li{
+	margin-top:20px;
+}
+a {
+	text-decoration: none
+}
+a:link {
+	color: #364f56
+}
+a:visited {
+	color: #333333
+}
+a:hover {
+	color: #ae0927
+}
+a:active {
+	color: #0000ff
+}
+

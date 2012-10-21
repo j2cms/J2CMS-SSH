@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-image:url(../images/menu_bg.jpg);
+	background-attachment:fixed;
+	}
+
+#left {/*页面左边*/
+    float:left;
+	width:266px;
+	height:600px;
+	z-index:2;
+	background-color:#FFF;
+}
+
+#main1 {/*内部链接页面*/ 
+	float:left;
+	width:727px;
+	border-width: 0px;
+}
+
+
+/***************** 文章显示页面样式定义 *****************/
+#ShowNews {
+	/*
+	width:100%;
+	margin:0px 1px 0 auto;
+	*/
+	margin:0;width:100%; height:100%; background:#ffffff; border:1px solid #959595;
+	}
+
+#Pos {
+	/*
+	float:left;
+	padding-top:3px;
+	width:auto;
+	height:23px;
+	border:1px solid #959595;
+	font-size:14px;
+	*/
+	margin:0;width:auto; height:18px; border-bottom:1px solid #959595; padding:8px 0px 8px 0px; text-align:left;background: #DEE8F2;
+}
+#Pos a:link {
+ text-decoration: none;
+ color:#000;
+}
+#Pos a:visited {
+ text-decoration: none;
+}
+#Pos a:hover {
+	color: #ff6600; text-decoration: underline;
+}
+#Pos a:active {
+	color:#60F; text-decoration: none
+}
+
+#Content {
+	width:100%;
+	background-color:#FFFFFF; 
+	font-family:"Arial,Helvetica,sans-serif";
+}
+#Content #Title{ margin-top:15px;text-align:center; font-size:20px; font-weight:bold; color:#222222;}
+#Content #info{ margin-top:10px;text-align:center; font-size:12px;color:#333333;}
+#Content #NewsContent{ margin:20px; padding:5px 20px 30px 20px;text-align:left; font-size:14px;color:#222222; border-top:1px solid #959595; line-height:20px;};
+/***************** 文章显示页面样式定义 end *****************/
+
+
+

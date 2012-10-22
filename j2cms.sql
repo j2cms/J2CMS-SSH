@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2012 年 10 月 21 日 19:14
+-- 生成日期: 2012 年 10 月 22 日 13:46
 -- 服务器版本: 5.5.16
 -- PHP 版本: 5.3.8
 
@@ -161,7 +161,7 @@ CREATE TABLE IF NOT EXISTS `j2_config` (
   `sys_date` datetime DEFAULT NULL,
   `uuid` varchar(36) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=47 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
 -- 转存表中的数据 `j2_config`
@@ -221,10 +221,6 @@ CREATE TABLE IF NOT EXISTS `j2_group` (
 --
 
 INSERT INTO `j2_group` (`id`, `info`, `manager_article`, `manage_channel`, `manage_comment`, `manage_config`, `manage_group`, `manager_log`, `manager_user`, `name`, `check_state`, `sys_date`) VALUES
-(1, '', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'D级代理商', NULL, NULL),
-(2, '', 'N', 'Y', 'N', 'N', 'N', 'N', 'Y', 'C级代理商', NULL, NULL),
-(3, '', 'Y', 'N', 'N', 'N', 'Y', 'N', 'N', 'B级代理商', NULL, NULL),
-(4, '', 'Y', 'Y', 'Y', 'N', 'Y', 'N', 'Y', 'A级代理商', NULL, NULL),
 (5, '', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', '系统管理员', 2, NULL),
 (12, '', 'N', 'N', 'N', 'N', 'Y', 'N', 'Y', '普通管理员', NULL, NULL),
 (13, '', 'N', 'N', 'N', 'N', 'N', 'N', 'N', '测试用户', NULL, NULL);
@@ -283,13 +279,7 @@ CREATE TABLE IF NOT EXISTS `j2_user` (
 --
 
 INSERT INTO `j2_user` (`id`, `QQ`, `address`, `birthday`, `check_state`, `createTime`, `email`, `gender`, `info`, `last_login_ip`, `last_login_time`, `login_number`, `j2cms_pass_word`, `real_name`, `telephone`, `j2cms_user_name`, `zipCode`, `group_id`, `sys_date`) VALUES
-(1, '75214390', '湖北省武汉市光谷创业街SBI ', '2012-01-01', 2, NULL, 'j2cms.org@gmail.com', 1, '', NULL, NULL, NULL, '30A7705B252F045B81C5C63A70B3D58E', '管理员', '15902728557', 'yeelor', '430070', 5, '2012-03-25 18:05:31'),
-(2, '', '', NULL, 2, NULL, '', 0, '', NULL, NULL, NULL, '098F6BCD4621D373CADE4E832627B4F6', 'test', '', 'user1', '', 4, NULL),
-(3, '', '', NULL, 2, NULL, '', 0, '', NULL, NULL, NULL, 'D65E1A190F9BBDD12305FD9D1DE00F37', '王诚', '', 'wangcheng', '', 5, '2012-03-21 06:00:28'),
-(16, '', '', NULL, 1, NULL, '', 1, '', NULL, NULL, NULL, '1CDF336760EF0DCB120F01BD22B04925', '杨阳', '', 'yangyang', '', 12, NULL),
-(17, '', '', NULL, 2, NULL, '', 0, '', NULL, NULL, NULL, '21232F297A57A5A743894A0E4A801FC3', '测试用户', '', 'admin', '', 5, NULL),
-(18, '', '', NULL, 1, NULL, '', 1, '', NULL, NULL, NULL, 'C84258E9C39059A89AB77D846DDAB909', '', '', 'admin2', '', 5, '2012-06-27 17:40:23'),
-(19, '', '', NULL, 2, NULL, '', 1, '', NULL, NULL, NULL, '69ED688613F4A636545C424E2FCA02FC', '刘', '', 'liu', '', 5, '2012-06-07 23:13:30');
+(17, '', '', NULL, 2, NULL, '', 0, '', NULL, NULL, NULL, '21232F297A57A5A743894A0E4A801FC3', '测试用户', '', 'admin', '', 5, NULL);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

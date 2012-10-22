@@ -85,11 +85,11 @@ function anotherImg()
                         <table cellSpacing="0" cellPadding="0" width="100%" border="0" height="143" id="table212">
                           <tr>
                             <td width="13%" height="38" class="top_hui_text"><span class="login_txt">管理员：&nbsp;&nbsp; </span></td>
-                            <td height="38" colspan="2" class="top_hui_text"><input name="entity.username" id="username" class="editbox4" value='${(entity.username)!""}'/>                            </td>
+                            <td height="38" colspan="2" class="top_hui_text"><input name="entity.username" id="entity.username" class="editbox4" value='${(entity.username)!""}'/>                            </td>
                           </tr>
                           <tr>
                             <td width="13%" height="35" class="top_hui_text"><span class="login_txt"> 密 &nbsp;&nbsp;码： &nbsp;&nbsp; </span></td>
-                            <td height="35" colspan="2" class="top_hui_text"><input class="editbox4" type="password"  name="entity.password" id="entity.password" value=''/>
+                            <td height="35" colspan="2" class="top_hui_text"><input  name="entity.password" id="entity.password"  class="editbox4" type="password" value=''/>
                               <img src="/images/luck.gif" height="18"/> </td>
                           </tr>
                           <tr>

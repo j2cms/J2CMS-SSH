@@ -30,7 +30,7 @@ public class Config implements Serializable {
 	private String fullName;//网站全名
 	@Column(length=50)
 	private String keywords;//网站关键字
-	@Column(length=100)
+	@Column(length=200)
 	private String description;//网站描述
 	@Column(length=1000)
 	private String introduce;

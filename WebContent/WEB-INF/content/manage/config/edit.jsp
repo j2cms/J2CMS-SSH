@@ -43,7 +43,7 @@
               </tr>             
               <tr>
                 <td align="right">网站描述:</td>
-                <td><input  size="40"   type="text" name="config.description" id="config.description" value="${config.description}" maxlength="100" /></td>
+                <td><input  size="40"   type="text" name="config.description" id="config.description" value="${config.description}" maxlength="200" /></td>
               </tr>            
               <tr>
                 <td align="right">负责人:</td>

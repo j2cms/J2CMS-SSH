@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2012 年 10 月 23 日 14:14
+-- 生成日期: 2012 年 10 月 25 日 09:19
 -- 服务器版本: 5.5.16
 -- PHP 版本: 5.3.8
 
@@ -150,7 +150,7 @@ CREATE TABLE IF NOT EXISTS `j2_config` (
   `full_name` varchar(100) DEFAULT NULL,
   `QQ` varchar(20) DEFAULT NULL,
   `ceo` varchar(20) DEFAULT NULL,
-  `description` varchar(100) DEFAULT NULL,
+  `description` varchar(200) DEFAULT NULL,
   `introduce` varchar(1000) DEFAULT NULL,
   `keywords` varchar(50) DEFAULT NULL,
   `mobile` varchar(13) DEFAULT NULL,
@@ -168,7 +168,7 @@ CREATE TABLE IF NOT EXISTS `j2_config` (
 --
 
 INSERT INTO `j2_config` (`id`, `company`, `copyright`, `domain`, `email`, `name`, `record_code`, `template`, `file`, `full_name`, `QQ`, `ceo`, `description`, `introduce`, `keywords`, `mobile`, `statistics`, `tel`, `ip`, `version`, `sys_date`, `uuid`) VALUES
-(1, '武汉易乐网络科技有限公司 ', '2009-2012 J2CMS ', 'www.j2cms.org', 'j2cms.org@gmail.com', 'J2CMS', '鄂ICP备08102130号', 'template/j2cms/', '/', '捷免网络J2CMS|开源 jsp cms | java cms ', '75214390', '李小天', 'J2CMS是一个基于JAVAEE平台的轻量极的敏捷开发架构,实现了一个内容管理系统模型．集合了Spring3.1 + Struts2.3 + Hibernate4.1 + JPA2.0 + FreeM', '    J2CMS是一个基于JAVAEE平台的轻量极的敏捷开发架构,实现了一个内容管理系统模型．集合了Spring3.1 + Struts2.3 + Hibernate4.1 + JPA2.0 + FreeMarker + MySQL 等技术。<br/>更新时间:2012年10月22日<br/>软件大小:24M  <br/>\n<a href="manage" title="帐号：admin 密码：admin" target="_blank">后台演示</a>  <img src="/template/j2cms/images/downicon.gif"/>\n<a href="https://github.com/j2cms/J2CMS-SSH/zipball/master" target="_blank">立即下载</a>', 'java cms,jsp cms', '18818232418', '<script src=''http://s87.cnzz.com/stat.php?id=1766140&web_id=1766140'' language=''JavaScript'' charset=''gb2312''></script>', '18818232418', '218.193.154.51', '20121022', '2012-10-23 19:59:25', '');
+(1, '武汉易乐网络科技有限公司 ', '2009-2012 J2CMS ', 'www.j2cms.org', 'j2cms.org@gmail.com', 'J2CMS', '鄂ICP备08102130号', 'template/j2cms/', '/', '捷免网络J2CMS|开源 jsp cms | java cms ', '75214390', '李小天', 'J2CMS是一个基于JAVAEE平台的轻量极的敏捷开发架构,实现了一个内容管理系统模型．集合了Spring3.1 + Struts2.3 + Hibernate4.1 + JPA2.0 + FreeMarker + MySQL 等技术', '    J2CMS是一个基于JAVAEE平台的轻量极的敏捷开发架构,实现了一个内容管理系统模型．集合了Spring3.1 + Struts2.3 + Hibernate4.1 + JPA2.0 + FreeMarker + MySQL 等技术。<br/>更新时间:2012年10月22日<br/>软件大小:24M  <br/>\n<a href="manage" title="帐号：admin 密码：admin" target="_blank">后台演示</a>  <img src="/template/j2cms/images/downicon.gif"/>\n<a href="https://github.com/j2cms/J2CMS-SSH/zipball/master" target="_blank">立即下载</a>', 'java cms,jsp cms', '18818232418', '<script src=''http://s87.cnzz.com/stat.php?id=1766140&web_id=1766140'' language=''JavaScript'' charset=''gb2312''></script>', '18818232418', '218.193.154.51', '20121022', '2012-10-25 13:14:48', '');
 
 -- --------------------------------------------------------
 
@@ -245,6 +245,28 @@ CREATE TABLE IF NOT EXISTS `j2_log` (
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `j2_order`
+--
+
+CREATE TABLE IF NOT EXISTS `j2_order` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `address` varchar(50) DEFAULT NULL,
+  `danwei` varchar(2) DEFAULT NULL,
+  `name` varchar(20) DEFAULT NULL,
+  `num` varchar(10) DEFAULT NULL,
+  `other` varchar(500) DEFAULT NULL,
+  `release_date` varchar(10) DEFAULT NULL,
+  `sys_date` datetime DEFAULT NULL,
+  `tel` varchar(20) DEFAULT NULL,
+  `time` varchar(2) DEFAULT NULL,
+  `channel_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FKA21157652A3513` (`channel_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- 表的结构 `j2_user`
 --
 
@@ -280,6 +302,16 @@ CREATE TABLE IF NOT EXISTS `j2_user` (
 
 INSERT INTO `j2_user` (`id`, `QQ`, `address`, `birthday`, `check_state`, `createTime`, `email`, `gender`, `info`, `last_login_ip`, `last_login_time`, `login_number`, `j2cms_pass_word`, `real_name`, `telephone`, `j2cms_user_name`, `zipCode`, `group_id`, `sys_date`) VALUES
 (1, '', '', NULL, 2, NULL, '', 0, '', NULL, NULL, NULL, '21232F297A57A5A743894A0E4A801FC3', '测试用户', '', 'admin', '', 5, NULL);
+
+--
+-- 限制导出的表
+--
+
+--
+-- 限制表 `j2_order`
+--
+ALTER TABLE `j2_order`
+  ADD CONSTRAINT `FKA21157652A3513` FOREIGN KEY (`channel_id`) REFERENCES `j2_channel` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

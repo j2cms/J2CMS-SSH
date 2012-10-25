@@ -15,7 +15,7 @@
     </div><!--left end-->
         <div id="main1" class="main1">
        		 <div id="ShowNews">
-                <div id="Pos">&nbsp;<a href="">首页<!--   --></a>
+                <div id="Pos">&nbsp;<a href="/">首页<!--   --></a>
 	                <img src="/template/j2cms/images/pos.gif" border="0"/>
 	                	${entity.name!""}
                 </div>

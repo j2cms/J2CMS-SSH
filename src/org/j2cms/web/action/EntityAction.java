@@ -104,7 +104,6 @@ public abstract class EntityAction<T> extends BaseAction implements ModelDriven<
 	 * @see com.opensymphony.xwork2.Preparable#prepare()
 	 */
 	@SuppressWarnings("unchecked")
-	@Override
 	public void prepare() throws Exception {
 		// 利用反射新建enity对象
 		this.entity = this.instanceAnnotationObject();
@@ -140,7 +139,6 @@ public abstract class EntityAction<T> extends BaseAction implements ModelDriven<
 	/* 
 	 * @see com.opensymphony.xwork2.ModelDriven#getModel()
 	 */
-	@Override
 	public T getModel() {
 		return entity;
 	}

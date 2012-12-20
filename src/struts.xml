@@ -16,8 +16,9 @@
     <constant name="struts.devMode" value="false" />
     
     <constant name="struts.convention.action.disableJarScanning" value="true" />
-
+	<!--
     <constant name="struts.convention.action.includeJars" value=".*?\\myFilter.*?jar(!/)?"/>
+    -->
     <constant name="struts.convention.redirect.to.slash" value="false"/>
     
     <!-- Convention插件可以自动重新加载配置的功能，无需重启容器，就可以刷新类中包含的action,生产环境下要设为false -->

@@ -1,6 +1,6 @@
 ﻿www.j2cms.org
 
-J2CMS是一个基于JAVAEE平台的轻量级的敏捷开发架构,实现了一个内容管理系统模型．集合了Spring3.1 + Struts2.3 + Hibernate4.1 + JPA2.0 + FreeMarker + MySQL 等技术。
+J2CMS是一个基于JAVAEE平台的轻量级的敏捷开发架构,实现了一个内容管理系统模型．集合了Spring + Struts + Hibernate + JPA + FreeMarker + MySQL 等技术。
 开发环境　:
 eclipse-jee-Juno-Release-win32
 JDK 1.6

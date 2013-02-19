@@ -5,16 +5,16 @@
 <script language=JavaScript>
 function logout(){
 	if (confirm("您确定要退出控制面板吗？"))
-	top.location = "/user/logout";
+	top.location = "${C.ctp}/user/logout";
 	return false;
 }
 </script>
-<link href="/css/skin.css" rel="stylesheet" type="text/css"/>
+<link href="../css/skin.css" rel="stylesheet" type="text/css"/>
 </head>
 <body leftmargin="0" topmargin="0">
 <table width="100%" height="64" border="0" cellpadding="0" cellspacing="0" class="admin_topbg">
   <tr>
-    <td  width="40%" height="64"><a href="http://www.j2cms.com" target="_blank" title="点此下载最新版本"><img border="0" src="/images/j2cms_logo.gif"  height="64" alt=""/></a></td>
+    <td  width="40%" height="64"><a href="http://www.j2cms.com" target="_blank" title="点此下载最新版本"><img border="0" src="../images/j2cms_logo.gif"  height="64" alt=""/></a></td>
     <td width="60%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td width="85%" height="38" class="admin_txt"><b>${(user.username)!""}</b>， 您好！今天是
@@ -38,7 +38,7 @@ function logout(){
       &nbsp;&nbsp;
       <a href="../index" title="生成首页" target="_blank" style="color:#FFF">网站首页</a>
         </td>
-        <td width="11%" nowrap><a href="#" target="_self" onClick="logout();"><img src="/images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
+        <td width="11%" nowrap><a href="#" target="_self" onClick="logout();"><img src="../images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
         <td width="4%">&nbsp;</td>
       </tr>
       <tr>

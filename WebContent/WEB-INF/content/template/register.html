@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link href="/template/j2cms/css/common.css" rel="stylesheet" type="text/css" />
-<link href="/template/j2cms/css/Search.css" rel="stylesheet" type="text/css" />
-<script language="javascript" src="/template/j2cms/js/setHeight.js" type="text/javascript"></script>
+<link href="${C.ctp}/template/j2cms/css/common.css" rel="stylesheet" type="text/css" />
+<link href="${C.ctp}/template/j2cms/css/Search.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="${C.ctp}/template/j2cms/js/setHeight.js" type="text/javascript"></script>
 <title>注册-${C.name}</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
 		cellspacing="0" style="font-weight: bold; font-size: 10pt;">
 		<tr>
 			<td>
-				<form method="post" action="/userSave" name="addForm">
+				<form method="post" action="userSave" name="addForm">
 					<table width="100%" align="center" height="256" border="1"  rules="groups" frame="border" style="border-color: #99CCFF; ">
 						<tr style="background-color: #edf2f7">
 							<td height="25" width="35%" align="right">用户名：</td>

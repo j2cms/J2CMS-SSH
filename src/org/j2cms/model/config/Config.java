@@ -18,7 +18,7 @@ public class Config implements Serializable {
 	@Id
 	@GeneratedValue
 	private Integer id; // 配置ID
-	@Column(length = 10)
+	@Column(length = 20)
 	private String version; // 版本
 	@Column(length = 30)
 	private String domain; // 域名
@@ -53,7 +53,7 @@ public class Config implements Serializable {
 	@Column(length =20)
 	private String template; //模版名
 	@Column(length=20)
-	private String file="/";//目录名
+	private String ctp="/";//目录名
 	@Column(length=200)
 	private String statistics="";//站长统计
 	@Column(length=36)
@@ -174,11 +174,11 @@ public class Config implements Serializable {
 	public void setTemplate(String template) {
 		this.template = template;
 	}
-	public String getFile() {
-		return file;
+	public String getCtp() {
+		return ctp;
 	}
-	public void setFile(String file) {
-		this.file = file;
+	public void setCtp(String ctp) {
+		this.ctp = ctp;
 	}
 	public String getUuid() {
 		return uuid;
@@ -201,7 +201,7 @@ public class Config implements Serializable {
 	}
 	public String getPath() {
 		if(path==null){
-			path=this.file+"template/"+this.template+"/";
+			path=this.ctp+"template/"+this.template+"/";
 		}
 		return path;
 	}

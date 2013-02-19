@@ -4,8 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel=stylesheet href="/css/demo.css" type="text/css"/>
-<link href="/css/bodystyle.css" rel="stylesheet" type="text/css"/>
+<link rel=stylesheet href="../../css/demo.css" type="text/css"/>
+<link href="../../css/bodystyle.css" rel="stylesheet" type="text/css"/>
 <script language=Javascript src="/js/post.js"></script>
 <script language=Javascript src="/js/article.js"></script>
 </head>

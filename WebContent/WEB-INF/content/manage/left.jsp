@@ -6,12 +6,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script src="/js/webTree.js" type="text/javascript" language="javascript"></script>
-<link href="/css/webTree.css" type="text/css" rel="stylesheet" />
+<script src="../js/webTree.js" type="text/javascript" language="javascript"></script>
+<link href="../css/webTree.css" type="text/css" rel="stylesheet" />
 
-<script src="/js/prototype.lite.js" type="text/javascript"></script>
-<script src="/js/moo.fx.js" type="text/javascript"></script>
-<script src="/js/moo.fx.pack.js" type="text/javascript"></script>
+<script src="../js/prototype.lite.js" type="text/javascript"></script>
+<script src="../js/moo.fx.js" type="text/javascript"></script>
+<script src="../js/moo.fx.pack.js" type="text/javascript"></script>
 <style>
 body {
 	font: 12px Arial, Helvetica, sans-serif;
@@ -40,7 +40,7 @@ H1 a {
 	height: 30px;
 	text-decoration: none;
 	moz-outline-style: none;
-	background-image: url(/images/menu_bgs.gif);
+	background-image: url(../images/menu_bgs.gif);
 	background-repeat: no-repeat;
 	line-height: 30px;
 	text-align: center;
@@ -89,7 +89,7 @@ H1 a {
 	font-size: 12px;
 	line-height: 26px;
 	color: #333333;
-	background-image: url(/images/menu_bg1.gif);
+	background-image: url(../images/menu_bg1.gif);
 	background-repeat: no-repeat;
 	height: 26px;
 	width: 182px;
@@ -106,7 +106,7 @@ H1 a {
 	font-size: 12px;
 	line-height: 26px;
 	color: #333333;
-	background-image: url(/images/menu_bg1.gif);
+	background-image: url(../images/menu_bg1.gif);
 	background-repeat: no-repeat;
 	display: block;
 	text-align: center;
@@ -122,7 +122,7 @@ H1 a {
 	font-size: 12px;
 	line-height: 26px;
 	color: #333333;
-	background-image: url(/images/menu_bg1.gif);
+	background-image: url(../images/menu_bg1.gif);
 	background-repeat: no-repeat;
 	height: 26px;
 	width: 182px;
@@ -140,7 +140,7 @@ H1 a {
 	line-height: 26px;
 	font-weight: bold;
 	color: #006600;
-	background-image: url(/images/menu_bg2.gif);
+	background-image: url(../images/menu_bg2.gif);
 	background-repeat: no-repeat;
 	text-align: center;
 	display: block;
@@ -191,13 +191,13 @@ H1 a {
 
 		<div class="dtree">
 		<center><a href="javascript: d.openAll();"><img
-			src="/images/icon/4.png" title="展开全部" /></a> | <a
+			src="../images/icon/4.png" title="展开全部" /></a> | <a
 			href="javascript: d.closeAll();"><img title="收起所有"
-			src="/images/icon/3.png" /></a></center>
+			src="../images/icon/3.png" /></a></center>
 		<script type="text/javascript">
 			var d = new dTree('d');
 			//d.add(0,-1,'待审核','/manage/article/list?checkState=noCheck','','main');
-			d.add(1,-1,'全部栏目','/manage/article/list?selector.checkState=pass','','main');
+			d.add(1,-1,'全部栏目','article/list?selector.checkState=pass','','main');
 			
 			<%
 				String o =(String)session.getAttribute("s");
@@ -206,7 +206,7 @@ H1 a {
 				for(Channel c:channels)
 				{
 					%>
-					d.add(<%=c.getId()%>,<%=c.getFather().getId()%>,'<%=c.getName()%>','/manage/article/list?selector.checkState=pass&selector.channel.id=<%=c.getId()%>','','main');
+					d.add(<%=c.getId()%>,<%=c.getFather().getId()%>,'<%=c.getName()%>','article/list?selector.checkState=pass&selector.channel.id=<%=c.getId()%>','','main');
 					<%
 				}
 			%>
@@ -231,9 +231,9 @@ H1 a {
 		</ul>
 		<div class="dtree">
 		<center><a href="javascript: d2.openAll();"><img
-			src="/images/icon/4.png" title="展开全部" /></a> | <a
+			src="../images/icon/4.png" title="展开全部" /></a> | <a
 			href="javascript: d2.closeAll();"><img title="收起所有"
-			src="/images/icon/3.png" /></a></center>
+			src="../images/icon/3.png" /></a></center>
 		<script type="text/javascript">
 		var d2 = new dTree('d2');
 		d2.add(1,-1,'全部栏目','channel/list','','main');
@@ -249,8 +249,6 @@ H1 a {
 </script></div>
 		</div>
 
-
-
 		<h1 class="type"><a href="javascript:void(0)">注册用户管理</a></h1>
 		<div class="content">
 		<ul class="MM">
@@ -264,10 +262,10 @@ H1 a {
 		<h1 class="type"><a href="javascript:void(0)">网站常规管理</a></h1>
 		<div class="content">
 		<ul class="MM">
-			<li><a href="/manage/config/edit" target="main">基本设置</a></li>
-			<li><a href="/manage/config/flash/list" target="main">首页FLASH</a></li>
+			<li><a href="config/edit" target="main">基本设置</a></li>
+			<li><a href="flash/list" target="main">首页FLASH</a></li>
 			<!--  <li><a href="/manage/log/list" target="main">日志管理</a></li> -->
-			<li><a href="/manage/config/makeIndexHtml" target="main">生成首页</a></li>
+			<li><a href="config/makeIndexHtml" target="main">生成首页</a></li>
 		</ul>
 		</div>
 

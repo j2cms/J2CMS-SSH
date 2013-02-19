@@ -25,7 +25,8 @@ public class AdminLoginValidateFilter implements Filter {
 		User user = WebUtil.getUser(request);
 		if (user == null) {
 			HttpServletResponse response = (HttpServletResponse) res;
-			response.sendRedirect("/login");
+			String ctp=request.getServletContext().getContextPath();
+			response.sendRedirect(ctp+"/login");
 			return;
 		}
 		filterChain.doFilter(req, res);

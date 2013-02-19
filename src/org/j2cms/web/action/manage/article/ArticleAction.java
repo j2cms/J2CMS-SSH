@@ -96,8 +96,9 @@ public class ArticleAction  extends EntityAction<Article>{
 	@Actions({
 		@Action("/article")
 	})	
-	public String execute() throws Exception {//o.father.id=1 改成这样简单
+	public String article() throws Exception {//o.father.id=1 改成这样简单
 
+		String ctp = (String)(Struts2Utils.getRequest().getContextPath());//ctp	
 		if(entity!=null&&entity.getCheckState()==CheckState.pass){
 			entity.setVisitTotal(entity.getVisitTotal()+1);//点击数加1
 			try {
@@ -109,7 +110,7 @@ public class ArticleAction  extends EntityAction<Article>{
 			} catch (TemplateException e) {
 				e.printStackTrace();
 			}//生成静态HTML
-			Struts2Utils.setAttribute("url", "/Article/"+id+".html");
+			Struts2Utils.setAttribute("url", ctp+"/Article/"+id+".html");
 			return "urlRedirect";
 		}
 		else{

@@ -119,7 +119,7 @@ public class JIndexAction extends ActionSupport {
 	@Actions({
 		@Action(value="/index",results={@Result(name="success",type="redirect",location="/index.html")})
 	})
-	public String execute(){
+	public String index(){
 		List<Flash> flashs= new ArrayList<Flash>();
 		List<Channel> channelsDisplay = new ArrayList<Channel>();	
 		List<Channel> channelInIndexs= new ArrayList<Channel>();
@@ -165,7 +165,7 @@ public class JIndexAction extends ActionSupport {
 			map.put("mostVisitArticles", mostVisitArticles);
 			map.put("mostCommentArticles", mostCommentArticles);
 			map.put("channelArticleMaps", channelArticleMaps);
-			String [] ftls={"head.ftl","foot.ftl","left.ftl","index.ftl"};
+			String [] ftls={"head.html","foot.html","left.html","index.html"};
 			String [] htmlNames={"head.html","foot.html","left.html","index.html"};
 			String relaPath="";
 			try {
@@ -228,7 +228,7 @@ public class JIndexAction extends ActionSupport {
 			map.put("mostVisitArticles", mostVisitArticles);
 			map.put("mostCommentArticles", mostCommentArticles);
 			map.put("channelArticleMaps", channelArticleMaps);
-			String [] ftls={"head.ftl","foot.ftl","left.ftl"};
+			String [] ftls={"head.html","foot.html","left.html"};
 			String [] htmlNames={"head.html","foot.html","left.html"};
 			String relaPath="";
 			try {

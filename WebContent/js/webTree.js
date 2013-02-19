@@ -60,35 +60,35 @@ inOrder: false
 
 this.icon = {
 
-root: '../../images/icon/base.gif',
+		root: '../images/icon/base.gif',
 
-folder: '../../images/icon/folder.gif',
+		folder: '../images/icon/folder.gif',
 
-folderOpen: '../../images/icon/folderopen.gif',
+		folderOpen: '../images/icon/folderopen.gif',
 
-node: '../../images/icon/page.gif',
+		node: '../images/icon/page.gif',
 
-empty: '../../images/icon/empty.gif',
+		empty: '../images/icon/empty.gif',
 
-line: '../../images/icon/line.gif',
+		line: '../images/icon/line.gif',
 
-join: '../../images/icon/join.gif',
+		join: '../images/icon/join.gif',
 
-joinBottom: '../../images/icon/joinbottom.gif',
+		joinBottom: '../images/icon/joinbottom.gif',
 
-plus: '../../images/icon/plus.gif',
+		plus: '../images/icon/plus.gif',
 
-plusBottom: '../../images/icon/plusbottom.gif',
+		plusBottom: '../images/icon/plusbottom.gif',
 
-minus: '../../images/icon/minus.gif',
+		minus: '../images/icon/minus.gif',
 
-minusBottom: '../../images/icon/minusbottom.gif',
+		minusBottom: '../images/icon/minusbottom.gif',
 
-nlPlus: '../../images/icon/nolines_plus.gif',
+		nlPlus: '../images/icon/nolines_plus.gif',
 
-nlMinus: '../../images/icon/nolines_minus.gif'
+		nlMinus: '../images/icon/nolines_minus.gif'
 
-};
+		};
 
 this.obj = objName;
 

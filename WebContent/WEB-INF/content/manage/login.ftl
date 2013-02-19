@@ -5,8 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>${(C.name)!"J2CMS"}管理中心登陆</title>
-<link href="/css/skin.css" rel="stylesheet" type="text/css"/>
-<link rel="stylesheet" href="/css/demo.css" type="text/css" />
+<link href="css/skin.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="css/demo.css" type="text/css" />
 <style type="text/css">
 <!--
 body {
@@ -48,7 +48,7 @@ function anotherImg()
                   <td height="149">&nbsp;</td>
                 </tr>
                 <tr>
-                  <td height="80" align="right" valign="top"><img src="/images/j2_logo.gif" width="279" height="68"></td>
+                  <td height="80" align="right" valign="top"><img src="images/j2_logo.gif" width="279" height="68"></td>
                 </tr>
                 <tr>
                   <td height="198" align="right" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
@@ -75,13 +75,13 @@ function anotherImg()
         <td width="50%" valign="bottom"><table width="100%" height="59" border="0" align="center" cellpadding="0" cellspacing="0">
             <tr>
               <td width="4%">&nbsp;</td>
-              <td width="96%" height="38" ><span class="login_txt_bt">登陆后台管理 </span>&nbsp; <span style="color:#F00;  font-size: 12px;">${message!""} </span></td>
+              <td width="96%" height="38" ><span class="login_txt_bt">登录后台管理 </span>&nbsp; <span style="color:#F00;  font-size: 12px;">${message!""} </span></td>
             </tr>
             <tr>
               <td>&nbsp;</td>
               <td height="21"><table cellSpacing="0" cellPadding="0" width="100%" border="0" id="table211" height="328">
                   <tr>
-                    <td height="164" colspan="2" align="middle"><form id="loginForm" name="loginForm" action="/loginCheck" method="post">
+                    <td height="164" colspan="2" align="middle"><form id="loginForm" name="loginForm" action="loginCheck" method="post">
                         <table cellSpacing="0" cellPadding="0" width="100%" border="0" height="143" id="table212">
                           <tr>
                             <td width="13%" height="38" class="top_hui_text"><span class="login_txt">管理员：&nbsp;&nbsp; </span></td>
@@ -90,16 +90,16 @@ function anotherImg()
                           <tr>
                             <td width="13%" height="35" class="top_hui_text"><span class="login_txt"> 密 &nbsp;&nbsp;码： &nbsp;&nbsp; </span></td>
                             <td height="35" colspan="2" class="top_hui_text"><input  name="entity.password" id="entity.password"  class="editbox4" type="password" value=''/>
-                              <img src="/images/luck.gif" height="18"/> </td>
+                              <img src="images/luck.gif" height="18"/> </td>
                           </tr>
                           <tr>
                             <td width="13%" height="35" ><span class="login_txt"></span></td>
-                            <td height="35" colspan="2" class="top_hui_text"><input class=wenbenkuang name="code" id="code"  type=text value="" maxLength=4 size=7 /> <img id="codeImg" align="middle" height="26px" src = "/util/rand" style="cursor:pointer" onClick="anotherImg();" title="点击刷新"/>
+                            <td height="35" colspan="2" class="top_hui_text"><input class=wenbenkuang name="code" id="code"  type=text value="" maxLength=4 size=7 /> <img id="codeImg" align="middle" height="26px" src = "util/rand" style="cursor:pointer" onClick="anotherImg();" title="点击刷新"/>
                               </td>
                           </tr>
                           <tr>
                             <td height="45" >&nbsp;</td>
-                            <td width="20%" height="35" ><input name="Submit" type="submit" class="button" id="Submit" value=" 登 陆 "/> </td>
+                            <td width="20%" height="35" ><input name="Submit" type="submit" class="button" id="Submit" value=" 登 录 "/> </td>
                             <td width="67%" class="top_hui_text"><input name="cs" type="button" class="button" id="cs" value=" 取 消 " onClick="showConfirmMsg1()"/></td>
                           </tr>
                         </table>
@@ -107,7 +107,7 @@ function anotherImg()
                     </form></td>
                   </tr>
                   <tr>
-                    <td width="433" height="164" align="right" valign="bottom"><img src="/images/login-wel.gif" width="242" height="138"/></td>
+                    <td width="433" height="164" align="right" valign="bottom"><img src="images/login-wel.gif" width="242" height="138"/></td>
                     <td width="57" align="right" valign="bottom">&nbsp;</td>
                   </tr>
               </table></td>

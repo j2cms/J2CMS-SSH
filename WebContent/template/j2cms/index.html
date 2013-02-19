@@ -5,13 +5,13 @@
 <title>${(C.fullName)!"J2CMS"}</title>
 <meta name="description" content='${C.description!""}'/>
 <meta name="keywords" content='${C.keywords!""}'/>
-<link href="/template/j2cms/css/base.css" rel="stylesheet" type="text/css" />
-<link href="/template/j2cms/css/common.css" rel="stylesheet" type="text/css" />
-<link href="/template/j2cms/css/index.css" rel="stylesheet" type="text/css" />
-<link href="/template/j2cms/css/tagChange.css" rel="stylesheet" type="text/css" />
-<script src="/template/j2cms/js/common.js" language="javascript" type="text/javascript"></script>
-<script src="/template/j2cms/js/flashImg.js" language="javascript" type="text/javascript"></script>
-<script src="/template/j2cms/js/google.js" language="javascript" type="text/javascript"></script>
+<link href="${C.ctp}/template/j2cms/css/base.css" rel="stylesheet" type="text/css" />
+<link href="${C.ctp}/template/j2cms/css/common.css" rel="stylesheet" type="text/css" />
+<link href="${C.ctp}/template/j2cms/css/index.css" rel="stylesheet" type="text/css" />
+<link href="${C.ctp}/template/j2cms/css/tagChange.css" rel="stylesheet" type="text/css" />
+<script src="${C.ctp}/template/j2cms/js/common.js" language="javascript" type="text/javascript"></script>
+<script src="${C.ctp}/template/j2cms/js/flashImg.js" language="javascript" type="text/javascript"></script>
+<script src="${C.ctp}/template/j2cms/js/google.js" language="javascript" type="text/javascript"></script>
 </head>
        
 <body>
@@ -22,7 +22,7 @@
          <div id="imageNews">
              <div class="flash">
             <script type="text/javascript">
-           		CreateFlash("finance_photo", "/template/j2cms/flash/imageNews.swf", 298, 250);
+           		CreateFlash("finance_photo", "${C.ctp}/template/j2cms/flash/imageNews.swf", 298, 250);
                 var xml="";
                 <#if flashs??>
                 <#list flashs as flash>
@@ -48,10 +48,10 @@
  		</div> 
         <!--informpart begin -->
         <div id="tagChange">
-        	<#include "tagChange.ftl" encoding="UTF-8">
+        	<#include "tagChange.html" encoding="UTF-8">
         </div> <!--informpart end -->
         <div id="systemAd">
-        	<#include "picad.ftl" encoding="UTF-8">
+        	<#include "picad.html" encoding="UTF-8">
         </div>
         
        <div id="right-piece1">
@@ -99,10 +99,10 @@
 <div id="right-piece2" >
 	<div class="rigth_title">服务与支持</div>
 	<div id ="right-piece2-content">
-		<img src="/template/j2cms/images/qq.gif" align="middle" alt="QQ" />&nbsp;<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=${C.QQ}&amp;site=qq&amp;menu=yes"><img title="点击与我会话" border="0" alt="点击与我会话" src="/template/j2cms/images/qq_online.gif" /></a>&nbsp;
+		<img src="${C.ctp}/template/j2cms/images/qq.gif" align="middle" alt="QQ" />&nbsp;<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=${C.QQ}&amp;site=qq&amp;menu=yes"><img title="点击与我会话" border="0" alt="点击与我会话" src="${C.ctp}/template/j2cms/images/qq_online.gif" /></a>&nbsp;
 		<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=304748568&amp;site=qq&amp;menu=yes"><img title="点击与我会话" border="0" alt="点击与我会话" src="http://wpa.qq.com/pa?p=2:304748568:41" /></a>
 		<br/><br/>
-		<img src="/template/j2cms/images/tel.gif" align="middle" alt="电话"/><b>${C.mobile!""}</b><br/>
+		<img src="${C.ctp}/template/j2cms/images/tel.gif" align="middle" alt="电话"/><b>${C.mobile!""}</b><br/>
 	</div>
 </div>
 

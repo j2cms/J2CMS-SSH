@@ -1,4 +1,4 @@
-package org.j2cms.web.action.manage.config.flash;
+package org.j2cms.web.action.manage.flash;
 
 import org.apache.struts2.convention.annotation.ExceptionMapping;
 import org.apache.struts2.convention.annotation.ExceptionMappings;

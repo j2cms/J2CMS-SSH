@@ -89,10 +89,13 @@
         	alert("请勾选要删除的记录！");
         	return  false;
    	 	}
-    	if('${selector.checkState}'=="recycle"&&confirm("操作不可恢复,您确定删除吗？"))
+    	if(document.all["selector.checkState"].value=="recycle")
     	{
-    		document.frmAction.action = "delete";
-    		document.frmAction.submit();
+    		if(confirm("操作不可恢复,您确定删除吗？")){
+    			document.frmAction.action = "delete";
+        		document.frmAction.submit();
+    		}
+    		
     	}
    	 	else{
 	   	 	document.frmAction.action = "recycle";

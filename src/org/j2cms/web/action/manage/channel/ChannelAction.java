@@ -155,7 +155,9 @@ public class ChannelAction extends EntityAction<Channel> {
 		@Action(value="/search",results={@Result(name="search",type="freemarker",location="template/search.html")}),
 	})	
 	public String channel(){
-		Integer id = WebUtil.StrToInt(Struts2Utils.getParameter("id"));//channel		
+		Integer id = WebUtil.StrToInt(Struts2Utils.getParameter("id"));//channel	
+		String ctp = (String)(Struts2Utils.getRequest().getContextPath());//ctp	
+
 		String title = Struts2Utils.getParameter("title");
 		int page =WebUtil.StrToInt(Struts2Utils.getParameter("page"));//channel.ftl传递过来的page的值	
 		Channel channel = entityService.find(id);
@@ -163,8 +165,8 @@ public class ChannelAction extends EntityAction<Channel> {
 		Struts2Utils.setAttribute("title", title);
 		
 		Map <String,Object>map  = new HashMap<String,Object>();
-		String channelFTL = "channel.ftl";
-		String singleFTL="single.ftl";
+		String channelFTL = "channel.html";
+		String singleFTL="single.html";
 		String relaPath ="";
 		String htmlName = id+".html";
 		map.put("entity", channel);
@@ -228,7 +230,7 @@ public class ChannelAction extends EntityAction<Channel> {
 					}
 				}
 			}
-			Struts2Utils.setAttribute("url", "/"+relaPath+htmlName); 
+			Struts2Utils.setAttribute("url", ctp+"/"+relaPath+htmlName); 
 			return "urlRedirect";
 			}
 		else{
@@ -261,8 +263,8 @@ public class ChannelAction extends EntityAction<Channel> {
 		Channel entity = entityService.find(id);
 		CreateHtml creatHtml = new CreateHtml();
 		Map <String,Object>map  = new HashMap<String,Object>();
-		String channelFTL = "channel.ftl";
-		String singleFTL="single.ftl";
+		String channelFTL = "channel.html";
+		String singleFTL="single.html";
 		String relaPath ="";
 		String htmlName = id+".html";
 		map.put("entity", entity);

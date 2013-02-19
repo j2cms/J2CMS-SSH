@@ -3,8 +3,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="stylesheet" href="/css/demo.css" type="text/css" />
-<script src="/js/entity.js" language="javascript" type="text/javascript"></script>
+<link rel="stylesheet" href="../../css/demo.css" type="text/css" />
+<script src="../../js/entity.js" language="javascript" type="text/javascript"></script>
 </head>
 <body>
 <form name="frmAction" method="post" action="list">
@@ -104,15 +104,15 @@
 			<c:if test="${sortType=='visitTotal'}">${entity.visitTotal}</c:if>
 			</td>
 			<td align="center"><c:if test="${entity.checkState=='pass'}">
-				<img src="/images/yes.gif" title="已审核" />
+				<img src="../../images/yes.gif" title="已审核" />
 			</c:if> <c:if test="${entity.checkState=='draft'}">
-				<img src="/images/pic17.gif" title="草稿箱" />
+				<img src="../../images/pic17.gif" title="草稿箱" />
 			</c:if> <c:if test="${entity.checkState=='noCheck'}">
-				<img src="/images/noCheck.gif" title="待审核" />
+				<img src="../../images/noCheck.gif" title="待审核" />
 			</c:if> <c:if test="${entity.checkState=='noPass'}">
-				<img src="/images/no.gif" title="未通过" />
+				<img src="../../images/no.gif" title="未通过" />
 			</c:if> <c:if test="${entity.checkState=='recycle'}">
-				<img src="/images/recycle.gif" title="回收站" />
+				<img src="../../images/recycle.gif" title="回收站" />
 			</c:if></td>
 			<td align="center">
 			<input type="button" onclick="editSingle(${entity.id})" value=" 修 改 " /> 

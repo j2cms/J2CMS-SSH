@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="/css/demo.css" rel=stylesheet  type="text/css"/>
+<link href="../../css/demo.css" rel=stylesheet  type="text/css"/>
 
 <script language="javascript" src="/js/post.js" type="text/javascript"></script>
 <script language="javascript" src="/admin/js/news.js" type="text/javascript"></script>
@@ -23,7 +23,7 @@
             <table  border="0" style="font-size:12px;">     
 			   <tr>
                 <td align="right" width="200">程序版本:</td>
-                <td width="400"><input  size="40"   type="text" name="config.version" id="config.version" value="${config.version}" />&nbsp;&nbsp;<iframe src="/manage/getLatestVersion" marginheight="2px" marginwidth="0" height="1px" width="1px" scrolling="no" frameborder="0"  ></iframe></td> 
+                <td width="400"><input  size="40"   type="text" name="config.version" id="config.version" value="${config.version}" readonly="readonly" />&nbsp;&nbsp;<iframe src="/manage/getLatestVersion" marginheight="2px" marginwidth="0" height="1px" width="1px" scrolling="no" frameborder="0"  ></iframe></td> 
                </tr>
                <tr>
                 <td align="right" width="200">网站域名:</td>
@@ -83,7 +83,7 @@
               </tr>
               <tr>
                 <td align="right">程序目录:</td>
-                <td><input  size="40" type="text" name="config.file" id="config.file"  value="${config.file}"/>
+                <td><input  size="40" type="text" name="config.ctp" id="config.ctp"  value="${C.ctp}"/>
                  </td>
               </tr>
               <tr>

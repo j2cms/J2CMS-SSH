@@ -3,13 +3,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>${entity.name!""}-${(C.name)!"J2CMS"}</title>
-<link href="/template/j2cms/css/common.css" rel="stylesheet" type="text/css" />
-<link href="/template/j2cms/css/Search.css" rel="stylesheet" type="text/css" />
-<script language="javascript" src="/template/j2cms/js/setHeight.js" type="text/javascript"></script>
+<link href="${C.ctp}/template/j2cms/css/common.css" rel="stylesheet" type="text/css" />
+<link href="${C.ctp}/template/j2cms/css/Search.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="${C.ctp}/template/j2cms/js/setHeight.js" type="text/javascript"></script>
 <script language="javascript">
 function pageQuery(page) {
 	   //location.href = "/channel?id=${entity.id}&title=${title!""}&page="+page;
-	location.href = "/Channel/${entity.id!}_"+page+".html";
+	location.href = "${C.ctp}/Channel/${entity.id!}_"+page+".html";
 }
 </script>
 </head>
@@ -23,15 +23,15 @@ function pageQuery(page) {
 
     <div id="main1" class="main1">
          <div id="ShowNews">
-        <div id="Pos">&nbsp;<a href="/">首页</a><img src="/template/j2cms/images/pos.gif" border=0 />
+        <div id="Pos">&nbsp;<a href="/">首页</a><img src="${C.ctp}/template/j2cms/images/pos.gif" border=0 />
         <a href="/${entity.id?c}.html">${entity.name!""}</a>&nbsp;
         <#if title??&&title!=''>[关键字:<font class="red_normal">${title}</font>]</#if>
 		</div>
 				<div id="News">
                     <ul>
                     <#list pageView.records as article>
-                     <li><img src="/template/j2cms/images/arrow_01.gif"/> 
-                     <a href="/Article/${article.id?c}.html" title="${article.title}" target="_blank">${(article.title)!""}</a>
+                     <li><img src="template/j2cms/images/arrow_01.gif"/> 
+                     <a href="Article/${article.id?c}.html" title="${article.title}" target="_blank">${(article.title)!""}</a>
                      <span>[${(article.releaseDate)!""}]</span></li>
                      </#list>
                     </ul>

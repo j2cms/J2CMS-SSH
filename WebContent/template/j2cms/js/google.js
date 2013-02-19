@@ -663,7 +663,7 @@ window.gbar = {};
 		}
 	}
 	;
-	var l = "/template/j2cms/images/google_toolbar.png", m = 52, n = 37, o = 75, p = 100;
+	var l = "${C.ctp}/template/j2cms/images/google_toolbar.png", m = 52, n = 37, o = 75, p = 100;
 	function q(c, d, b, a, f) {
 		return {
 			url : c,

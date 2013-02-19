@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2013 年 02 月 19 日 16:01
+-- 生成日期: 2013 年 02 月 19 日 16:13
 -- 服务器版本: 5.5.16
 -- PHP 版本: 5.3.8
 
@@ -167,7 +167,7 @@ CREATE TABLE IF NOT EXISTS `j2_config` (
 --
 
 INSERT INTO `j2_config` (`id`, `company`, `copyright`, `domain`, `email`, `name`, `record_code`, `template`, `full_name`, `QQ`, `ceo`, `description`, `introduce`, `keywords`, `mobile`, `statistics`, `tel`, `ip`, `version`, `sys_date`, `uuid`, `ctp`) VALUES
-(1, '武汉易乐网络科技有限公司', '2009-2013 J2CMS ', 'www.j2cms.com', 'j2cms.org@gmail.com', 'J2CMS', '鄂ICP备08102130号', 'template/j2cms/', '捷免网络J2CMS|开源 jsp cms | java cms ', '75214390', '李小天', 'J2CMS是一个基于JAVAEE平台的轻量极的敏捷开发架构,实现了一个内容管理系统模型．集合了Spring + Struts+ Hibernate + JPA + FreeMarker + MySQL 等技术', '    J2CMS是一个基于JAVAEE平台的轻量极的敏捷开发架构,实现了一个内容管理系统模型．集合了Spring + Struts + Hibernate + JPA + FreeMarker + MySQL 等技术。<br/>更新时间:2013年02月20日<br/>软件大小:24M  <br/>\r\n<a href="manage" title="帐号：admin 密码：admin" target="_blank">后台演示</a>  <img src="template/j2cms/images/downicon.gif"/>\r\n<a href="https://github.com/j2cms/J2CMS-SSH/zipball/master" target="_blank">立即下载</a>', 'java cms,jsp cms', '15902728557', '<script src=''http://s87.cnzz.com/stat.php?id=1766140&web_id=1766140'' language=''JavaScript'' charset=''gb2312''></script>', '18818232418', '127.0.0.1', 'J2CMS_SSH_20130220', '2013-02-19 22:48:06', '', '/J2CMS-SSH');
+(1, '武汉易乐网络科技有限公司', '2009-2013 J2CMS ', 'www.j2cms.com', 'j2cms.org@gmail.com', 'J2CMS', '鄂ICP备08102130号', 'template/j2cms/', '捷免网络J2CMS|开源 jsp cms | java cms ', '75214390', '李小天', 'J2CMS是一个基于JAVAEE平台的轻量极的敏捷开发架构,实现了一个内容管理系统模型．集合了Spring + Struts+ Hibernate + JPA + FreeMarker + MySQL 等技术', '    J2CMS是一个基于JAVAEE平台的轻量极的敏捷开发架构,实现了一个内容管理系统模型．集合了Spring + Struts + Hibernate + JPA + FreeMarker + MySQL 等技术。<br/>更新时间:2013年02月20日<br/>软件大小:24M  <br/>\r\n<a href="manage" title="帐号：admin 密码：admin" target="_blank">后台演示</a>  <img src="template/j2cms/images/downicon.gif"/>\r\n<a href="https://github.com/j2cms/J2CMS-SSH/zipball/master" target="_blank">立即下载</a>', 'java cms,jsp cms', '15902728557', '<script src=''http://s87.cnzz.com/stat.php?id=1766140&web_id=1766140'' language=''JavaScript'' charset=''gb2312''></script>', '18818232418', '127.0.0.1', 'J2CMS-SSH_20130220', '2013-02-19 22:48:06', '', '/J2CMS-SSH');
 
 -- --------------------------------------------------------
 

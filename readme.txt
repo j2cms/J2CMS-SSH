@@ -2,44 +2,36 @@
 
 J2CMS是一个基于JAVAEE平台的轻量级的敏捷开发架构,实现了一个内容管理系统模型．集合了Spring + Struts + Hibernate + JPA + FreeMarker + MySQL 等技术。
 开发环境　:
-eclipse-jee-Juno-Release-win32
+eclipse-jee-juno-SR1-win32-x86_64
 JDK 1.6
-Apache tomcat 6.0
+Apache tomcat 7.0
 MySQL 5.5
 系统依赖的其它jar包版本可以在lib目录里看到
 
 导入Eclipse说明：
 1.src和WebContent目录分别是Eclipse工程中对应的目录内容
-2.j2cms.sql是数据库，需要导入mysql中，修改src\META-INF\persistence.xml 文件中数据库配置。
+2.j2cms-ssh.sql是数据库，需要导入MySQL中，修改src\META-INF\persistence.xml 文件中数据库配置。
 
 安装说明：
-1.将数据库文件（在根目录）j2cms.sql 导入数据库。
+1.将数据库文件（在根目录）j2cms-ssh.sql 导入数据库。
 　　方法一,用MySQLAdministrator导入
 　　方法二,用MySQL命令导入：
-	mysql> create database j2cms;
-	mysql> use j2cms;
-	mysql> source d:\j2cms.sql;
+	mysql> create database j2cms-ssh;
+	mysql> use  j2cms-ssh;
+	mysql> source d:\j2cms-ssh.sql ;
 2.修改配置文件 WEB-INF\classes\META-INF\persistence.xml 中的数据库链接。
-3.网站必须部署在根目录才能正常显示（因为使用了绝对路径）。比如tomcat的ROOT目录，访问路径为http://127.0.0.2:8080/ 
-      管理后台访问路径  http://127.0.0.2:8080/login  帐号 admin 密码 admin 
-　  配置一个带域名的主机，以下是在tomcat的server.xml中配置一个Host的示例
-     <Host name="127.0.0.2"  appBase="F:/web"
-            unpackWARs="true" autoDeploy="true"
-            xmlValidation="false" xmlNamespaceAware="false">
-	         <Alias>j2cms.org</Alias>
-             <Context path="" docBase="F:/web/j2cms" debug="0" reloadable="true"/>
-     </Host>
-
-4.重启Tomcat 通过http://127.0.0.2:8080访问
-
+3.管理后台路径 /login  如 http://127.0.0.1:8080/J2CMS-SSH/login 测试帐号 admin 密码 admin 
 
 
 
 关注最新开发进度请加官方QQ群31309177 [已满] 154615448 [已满] 196170407
 what's new
 =================================
+2013.02.20
+1.J2CMS-SSH版本能够从非根目录启动
+=================================
 2012.10.22
-1.当前版本的分支为j2cms-SSH
+1.当前版本的分支为J2CMS-SSH
 2.更新了SSH的版本,使用了当前最新的版本
 3.其它所有的依赖的jar包基本都升级到当前最新版本,去掉多余的jar包
 4.若干bug的修正

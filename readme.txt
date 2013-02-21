@@ -1,14 +1,15 @@
 ﻿官方网站 http://www.j2cms.org
 
 J2CMS是一个基于JAVAEE平台的轻量级的敏捷开发架构,实现了一个内容管理系统模型．集合了Spring + Struts + Hibernate + JPA + FreeMarker + MySQL 等技术。
-开发环境　:
+
+开发环境:
 eclipse-jee-juno-SR1-win32-x86_64
 JDK 1.6
 Apache tomcat 7.0
 MySQL 5.5
 系统依赖的其它jar包版本可以在lib目录里查看
 
-使用方式
+使用方式:
 一,导入Eclipse：
 1.先建一个名为J2CMS-SSH的工程
 2.将src和WebContent目录分别是Eclipse工程中对应的目录内容

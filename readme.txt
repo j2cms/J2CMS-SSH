@@ -9,8 +9,9 @@ MySQL 5.5
 系统依赖的其它jar包版本可以在lib目录里看到
 
 导入Eclipse说明：
-1.src和WebContent目录分别是Eclipse工程中对应的目录内容
-2.j2cms-ssh.sql是数据库，需要导入MySQL中，修改src\META-INF\persistence.xml 文件中数据库配置。
+1.先建一个名为J2CMS-SSH的工程
+2.将src和WebContent目录分别是Eclipse工程中对应的目录内容
+3.j2cms-ssh.sql是数据库，需要导入MySQL中，修改src\META-INF\persistence.xml 文件中数据库配置。
 
 安装说明：
 1.将数据库文件（在根目录）j2cms-ssh.sql 导入数据库。

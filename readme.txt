@@ -1,4 +1,4 @@
-﻿www.j2cms.org
+﻿官方网站 http://www.j2cms.org
 
 J2CMS是一个基于JAVAEE平台的轻量级的敏捷开发架构,实现了一个内容管理系统模型．集合了Spring + Struts + Hibernate + JPA + FreeMarker + MySQL 等技术。
 开发环境　:
@@ -28,7 +28,8 @@ MySQL 5.5
 what's new
 =================================
 2013.02.20
-1.J2CMS-SSH版本能够从非根目录启动
+1.j2cms-SSH版本能够从非根目录启动
+2.若干bug修正
 =================================
 2012.10.22
 1.当前版本的分支为J2CMS-SSH

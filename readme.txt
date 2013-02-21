@@ -6,22 +6,26 @@ eclipse-jee-juno-SR1-win32-x86_64
 JDK 1.6
 Apache tomcat 7.0
 MySQL 5.5
-系统依赖的其它jar包版本可以在lib目录里看到
+系统依赖的其它jar包版本可以在lib目录里查看
 
-导入Eclipse说明：
+使用方式
+一,导入Eclipse：
 1.先建一个名为J2CMS-SSH的工程
 2.将src和WebContent目录分别是Eclipse工程中对应的目录内容
 3.j2cms-ssh.sql是数据库，需要导入MySQL中，修改src\META-INF\persistence.xml 文件中数据库配置。
 
-安装说明：
+二,直接安装部署在Apache tomcat等容器中：
 1.将数据库文件（在根目录）j2cms-ssh.sql 导入数据库。
 　　方法一,用MySQLAdministrator导入
 　　方法二,用MySQL命令导入：
 	mysql> create database j2cms-ssh;
 	mysql> use  j2cms-ssh;
 	mysql> source d:\j2cms-ssh.sql ;
-2.修改配置文件 WEB-INF\classes\META-INF\persistence.xml 中的数据库链接。
-3.管理后台路径 /login  如 http://127.0.0.1:8080/J2CMS-SSH/login 测试帐号 admin 密码 admin 
+2.将根目录的j2cms-ssh.jar拷贝到WebContent\WEB-INF\lib目录里
+3.将WebContent拷贝到tomcat的webapps目录,改名为J2CMS-SSH.
+4.修改配置文件 WEB-INF\classes\META-INF\persistence.xml 中的数据库配置信息
+5.管理后台路径 /login  如 http://127.0.0.1:8080/J2CMS-SSH/login 测试帐号 admin 密码 admin
+6.注意改变程序目录名,比如将J2CMS-SSH改为MyWeb后,需要在管理后台重新生成静态表页才能正常显示,生成静态页面的顺序是先生成首页静态文件,再生成栏目和文章的静态页面
 
 
 

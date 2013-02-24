@@ -23,7 +23,7 @@
             <table  border="0" style="font-size:12px;">     
 			   <tr>
                 <td align="right" width="200">程序版本:</td>
-                <td width="400"><input  size="40"   type="text" name="config.version" id="config.version" value="${config.version}" readonly="readonly" />&nbsp;&nbsp;<iframe src="/manage/getLatestVersion" marginheight="2px" marginwidth="0" height="1px" width="1px" scrolling="no" frameborder="0"  ></iframe></td> 
+                <td width="400"><input  size="40"   type="text" name="config.version" id="config.version" value="${config.version}" readonly="readonly" />&nbsp;&nbsp;<iframe src="${C.ctp}/manage/getLatestVersion" marginheight="2px" marginwidth="0" height="1px" width="1px" scrolling="no" frameborder="0"  ></iframe></td> 
                </tr>
                <tr>
                 <td align="right" width="200">网站域名:</td>

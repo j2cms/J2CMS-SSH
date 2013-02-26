@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.custom.i18n.resources" value="messageResource"/>
+	<constant name="struts.i18n.encoding" value="utf-8"/>
+	<!-- 导入文件demo -->
+	<!-- <include file="example-config.xml" /> -->
+	<!-- 上传文件大小限制 -->	 
+	<constant name="struts.multipart.maxSize" value="50971520" />
+    <!-- 设置浏览器是否缓存静态内容,默认值为true(生产环境下使用),开发阶段最好关闭 -->
+    <constant name="struts.serve.static.browserCache" value="false"/>
+    <!-- 当struts的配置文件修改后,系统是否自动重新加载该文件,默认值为false(生产环境下使用),开发阶段最好打开 -->
+    <constant name="struts.configuration.xml.reload" value="true"/>
+    <!-- 开发模式下使用,这样可以打印出更详细的错误信息 -->
+    <constant name="struts.devMode" value="false" />
+    
+    <constant name="struts.convention.action.disableJarScanning" value="true" />
+	<!--
+    <constant name="struts.convention.action.includeJars" value=".*?\\myFilter.*?jar(!/)?"/>
+    -->
+    <constant name="struts.convention.redirect.to.slash" value="false"/>
+    
+    <!-- Convention插件可以自动重新加载配置的功能，无需重启容器，就可以刷新类中包含的action,生产环境下要设为false -->
+    <constant name="struts.convention.classes.reload" value="true"/>
+    <!-- 默认的视图主题 -->
+    <constant name="struts.ui.theme" value="simple" />
+    <!--修改默认的根package:action,actions,struts,struts2
+	<constant name="struts.convention.package.locators" value="web" />
+	-->
+	<constant name="struts.convention.default.parent.package" value="crud-default" />
+	
+	<!-- 修改默认结果页面路径
+	<constant name="struts.convention.result.path" value="/WEB-INF/jsps/"/>
+	-->
+	<!-- action对象是由spring来创建-->
+    <constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory" />
+	 
+	<!-- 用于CRUD Action的parent package -->
+	<package name="crud-default" extends="convention-default">
+		<!-- 基于paramsPrepareParamsStack,增加store interceptor保证actionMessage在redirect后不会丢失 -->
+		<interceptors>
+			<interceptor-stack name="crudStack">  
+				<interceptor-ref name="store">
+					<param name="operationMode">AUTOMATIC</param>
+				</interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack" />
+			</interceptor-stack>
+		</interceptors>
+		
+		<default-interceptor-ref name="crudStack" />
+	</package>
+	
+	<!--  
+	<package name="default" namespace="/" extends="struts-default">
+       <default-action-ref name="pagenotfound"></default-action-ref>  
+		<action name="pagenotfound"> 
+			<result>/template/error.ftl</result>  
+    	</action>
+    </package>
+    -->
+	
+	<!--使用Convention插件,实现约定大于配置的零配置文件风格.特殊的Result路径在Action类中使用@Result设定. -->
+	
+</struts>

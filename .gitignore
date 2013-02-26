@@ -3,5 +3,7 @@
 .buildpath
 /.classpath
 /.project
-/WebContent/WEB-INF/classes
+/WebContent/WEB-INF/classes/com
+/WebContent/WEB-INF/classes/org
+/WebContent/WEB-INF/classes/junit
 /src/com

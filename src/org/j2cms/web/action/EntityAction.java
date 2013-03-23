@@ -44,6 +44,13 @@ public abstract class EntityAction<T> extends BaseAction implements ModelDriven<
 	}
 
 	public void setEntity(T entity) {
+		if(this.entity==null)
+			try {
+				this.entity = this.instanceAnnotationObject();
+				System.out.println("实例化!");
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		this.entity = entity;
 	}
 
@@ -106,7 +113,11 @@ public abstract class EntityAction<T> extends BaseAction implements ModelDriven<
 	@SuppressWarnings("unchecked")
 	public void prepare() throws Exception {
 		// 利用反射新建enity对象
-		this.entity = this.instanceAnnotationObject();
+		try {
+			this.entity = this.instanceAnnotationObject();
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
 		this.entityClassName = this.entity.getClass().getSimpleName();
 		entityService.setEntityClass((Class<T>) entity.getClass());
 		for(Integer id:ids)
@@ -116,12 +127,13 @@ public abstract class EntityAction<T> extends BaseAction implements ModelDriven<
 		if(id != null) {
 			// 根据主键从数据库查找entity
 			try {
-				T dataEntity =entityService.find(this.id);
-				if(dataEntity != null) {
-					this.entity = dataEntity;
-				} else {
-					this.entity = this.instanceAnnotationObject();
-				}				
+					T dataEntity =entityService.find(this.id);
+					if(dataEntity != null) {
+						this.entity = dataEntity;
+					} else {
+						this.entity = this.instanceAnnotationObject();
+					}
+					log.info("实体对象实例化成功！");
 			} catch(NumberFormatException e) {
 				log.error("实体对象对象[{}]的id:{}转换数字失败!", this.entityClassName, id);
 			} catch (Exception e) {
@@ -130,11 +142,13 @@ public abstract class EntityAction<T> extends BaseAction implements ModelDriven<
 						id,
 						e.getMessage()
 				});
-				
-				throw e;
 			}
 		}
 	}
+	
+	public void setModel(T entity) {   
+        this.entity = entity;   
+    }   
 
 	/* 
 	 * @see com.opensymphony.xwork2.ModelDriven#getModel()

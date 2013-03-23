@@ -1,4 +1,4 @@
-﻿www.j2cms.org
+﻿捷兔网络官方网站 http://www.j2cms.com http://www.j2cms.org
 
 J2CMS是一个基于JAVAEE平台的轻量极的敏捷开发架构，实现了一个内容管理系统，集成使用了Spring+ Struts+ Hibernate + JPA + FreeMarker + MySQL 等技术。
 

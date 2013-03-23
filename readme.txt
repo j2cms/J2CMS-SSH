@@ -35,7 +35,7 @@ what's new
 1.更新J2CMS-SSH的jar包,包括sping,hibernate,struts等全部更新到最新
 2.修正AdminLoginValidateFilter的Bug，适应tomcat6
 3.ConfigListener放入org包
-4.若干Bug修正
+4.修正了生成首页时的报错
 =================================
 2013.03.20
 1.发布基于SpringMVC的J2CMS的安装包

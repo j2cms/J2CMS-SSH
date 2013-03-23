@@ -14,8 +14,8 @@ MySQL 5.5
 1.先建一个名为J2CMS-SSH的工程
 2.将src和WebContent目录分别是Eclipse工程中对应的目录内容
 3.j2cms-ssh.sql是数据库，需要导入MySQL中，
-           方法一,用MySQLAdministrator导入
-　   　方法二,用MySQL命令导入：
+	方法一,用MySQLAdministrator导入
+	方法二,用MySQL命令导入：
 	mysql> create database j2cms-ssh;
 	mysql> use  j2cms-ssh;
 	mysql> source d:\j2cms-ssh.sql ;

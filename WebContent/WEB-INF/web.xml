@@ -9,7 +9,7 @@
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
   <listener>
-    <listener-class>com.j2cms.web.listener.ConfigListener</listener-class>
+    <listener-class>org.j2cms.web.listener.ConfigListener</listener-class>
   </listener>
   <filter>
     <filter-name>encodingFilter</filter-name>

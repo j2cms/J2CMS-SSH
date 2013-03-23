@@ -1,6 +1,6 @@
-﻿官方网站 http://www.j2cms.org
+﻿www.j2cms.org
 
-J2CMS是一个基于JAVAEE平台的轻量级的敏捷开发架构,实现了一个内容管理系统模型．集合了Spring + Struts + Hibernate + JPA + FreeMarker + MySQL 等技术。
+J2CMS是一个基于JAVAEE平台的轻量极的敏捷开发架构，实现了一个内容管理系统，集成使用了Spring+ Struts+ Hibernate + JPA + FreeMarker + MySQL 等技术。
 
 开发环境:
 eclipse-jee-juno-SR1-win32-x86_64
@@ -10,35 +10,44 @@ MySQL 5.5
 系统依赖的其它jar包版本可以在lib目录里查看
 
 使用方式:
-一,导入Eclipse：
+导入Eclipse：
 1.先建一个名为J2CMS-SSH的工程
 2.将src和WebContent目录分别是Eclipse工程中对应的目录内容
-3.j2cms-ssh.sql是数据库，需要导入MySQL中，修改src\META-INF\persistence.xml 文件中数据库配置。
-
-二,直接安装部署在Apache tomcat等容器中：
-1.将数据库文件（在根目录）j2cms-ssh.sql 导入数据库。
-　　方法一,用MySQLAdministrator导入
-　　方法二,用MySQL命令导入：
+3.j2cms-ssh.sql是数据库，需要导入MySQL中，
+           方法一,用MySQLAdministrator导入
+　   　方法二,用MySQL命令导入：
 	mysql> create database j2cms-ssh;
 	mysql> use  j2cms-ssh;
 	mysql> source d:\j2cms-ssh.sql ;
-2.将根目录的j2cms-ssh.jar拷贝到WebContent\WEB-INF\lib目录里
-3.将WebContent拷贝到tomcat的webapps目录,改名为J2CMS-SSH.
-4.修改配置文件 WEB-INF\classes\META-INF\persistence.xml 中的数据库配置信息
-5.管理后台路径 /login  如 http://127.0.0.1:8080/J2CMS-SSH/login 测试帐号 admin 密码 admin
+4.修改src\META-INF\persistence.xml 文件中数据库配置。
+5.将工程用tomcat运行,管理后台路径 /login  如 http://127.0.0.1:8080/J2CMS-SSH/login 测试帐号 admin 密码 admin
 6.注意改变程序目录名,比如将J2CMS-SSH改为MyWeb后,需要在管理后台重新生成静态表页才能正常显示,生成静态页面的顺序是先生成首页静态文件,再生成栏目和文章的静态页面
 
 
 
+
+
 关注最新开发进度请加官方QQ群31309177 [已满] 154615448 [已满] 196170407 [已满] 117199347
+
 what's new
+=================================
+2013.03.23
+1.更新J2CMS-SSH的jar包,包括sping,hibernate,struts等全部更新到最新
+2.修正AdminLoginValidateFilter的Bug，适应tomcat6
+3.ConfigListener放入org包
+4.若干Bug修正
+=================================
+2013.03.20
+1.发布基于SpringMVC的J2CMS的安装包
+2.全新的功能和体验,是一个新的分支
+3.附带三套企业模版
 =================================
 2013.02.20
 1.j2cms-SSH版本能够从非根目录启动
 2.若干bug修正
 =================================
 2012.10.22
-1.当前版本的分支为J2CMS-SSH
+1.当前版本的分支为j2cms-SSH
 2.更新了SSH的版本,使用了当前最新的版本
 3.其它所有的依赖的jar包基本都升级到当前最新版本,去掉多余的jar包
 4.若干bug的修正

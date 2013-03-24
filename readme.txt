@@ -12,7 +12,7 @@ MySQL 5.5
 使用方式:
 导入Eclipse：
 1.先建一个名为J2CMS-SSH的工程
-2.将src和WebContent目录分别拷到工程中对应的目录
+2.将src和WebContent目录内容分别拷到工程中对应的目录
 3.j2cms-ssh.sql是数据库，需要导入MySQL中，
 	方法一,用MySQLAdministrator导入
 	方法二,用MySQL命令导入：

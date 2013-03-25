@@ -1,6 +1,6 @@
 ﻿捷兔网络官方网站 http://www.j2cms.com http://www.j2cms.org
 
-J2CMS是一个基于JAVAEE平台的轻量极的敏捷开发架构，实现了一个内容管理系统，集成使用了Spring+ Struts+ Hibernate + JPA + FreeMarker + MySQL 等技术。
+J2CMS是一个基于JavaEE平台的轻量极的敏捷开发架构，实现了一个内容管理系统，集成使用了Spring+ Struts+ Hibernate + JPA + FreeMarker + MySQL 等技术。
 
 开发环境:
 eclipse-jee-juno-SR1-win32-x86_64
@@ -22,7 +22,6 @@ MySQL 5.5
 4.修改src\META-INF\persistence.xml 文件中数据库配置。
 5.将工程用tomcat运行,管理后台路径 /login  如 http://127.0.0.1:8080/J2CMS-SSH/login 测试帐号 admin 密码 admin
 6.注意改变程序目录名,比如将J2CMS-SSH改为MyWeb后,需要在管理后台重新生成静态表页才能正常显示,生成静态页面的顺序是先生成首页静态文件,再生成栏目和文章的静态页面
-
 
 
 

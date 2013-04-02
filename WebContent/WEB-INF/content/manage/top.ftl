@@ -9,15 +9,123 @@ function logout(){
 	return false;
 }
 </script>
-<link href="../css/skin.css" rel="stylesheet" type="text/css"/>
+
+<style>
+body {
+background-color: #F3F3F3;
+}
+.header-wrap {
+width: 100%;
+min-width: 800px;
+height: 95px;
+position: relative;
+z-index: 21;
+}
+#header {
+background: #0899C9;
+padding: 14px 0 0 0;
+margin: 0 auto;
+width: 100%;
+min-width: 800px;
+height: 38px;
+}
+#logo {
+font:bold;
+padding: 0 0 0 30px;
+float: left;
+height: 29px;
+font-weight:bold;
+}
+#logo a {
+font-size: 14px;
+color: white;
+text-decoration: none;
+}
+#top_quick_links {
+float: right;
+padding-right: 25px;
+}
+
+#top_quick_links a{
+font-size: 12px;
+color: #DAF1F9;
+margin-right:10px;
+text-decoration: none;
+}
+
+#top_quick_links a:hover{
+font-size: 12px;
+color: #ffffff;
+margin-right:10px;
+text-decoration:underline;
+}
+
+#menu{
+list-style: none;
+width:auto;
+height: 39px;
+padding: 0px 30px 0px 30px;
+background: #E5E5E5 repeat-x;
+clear: both;
+}
+ul {
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+
+
+#menu li{
+float: left;
+display: block;
+text-align: center;
+position: relative;
+border: none;
+margin-right: 1px;
+}
+
+#menu li#quit{
+float:right;
+}
+
+#menu li a:hover
+{
+	background: #D2D2D2 50% -8px;
+	font-weight:bold;
+}
+
+
+#menu li a {
+font-size: 15px;
+color: #000000;
+display: block;
+outline: 0;
+text-decoration: none;
+padding: 8px 18px 10px;
+cursor:auto;
+text-transform: capitalize;
+text-shadow: 1px 1px #EBEBEB;
+}
+
+#menu ul, #menu li, #alt_menu ul, #alt_menu li 
+{
+line-height: 21px;
+text-align: left;
+}
+
+
+</style>
+
+
 </head>
-<body leftmargin="0" topmargin="0">
-<table width="100%" height="64" border="0" cellpadding="0" cellspacing="0" class="admin_topbg">
-  <tr>
-    <td  width="40%" height="64"><a href="http://www.j2cms.com" target="_blank" title="点此下载最新版本"><img border="0" src="../images/j2cms_logo.gif"  height="64" alt=""/></a></td>
-    <td width="60%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="85%" height="38" class="admin_txt"><b>${(user.username)!""}</b>， 您好！今天是
+<body>
+<div class="header-wrap">
+<div id="header">
+<div id="logo">
+	<a href="http://www.j2cms.com" target="_blank" title="点此下载最新版本">J2CMS</a>
+</div>
+<div id="top_quick_links">
+	<a>${(user.username)!""}， 您好！今天是
         <script language=javascript type=text/javascript>
 		<!--
 				var enabled = 0; today = new Date();
@@ -32,20 +140,20 @@ function logout(){
 				date = (today.getFullYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日" + day +"";
 				document.write(date);
 		// -->
-	  </script>
-      &nbsp;&nbsp;
-      <a href="right" target="main" style="color:#FFF">管理首页</a>
-      &nbsp;&nbsp;
-      <a href="../index" title="生成首页" target="_blank" style="color:#FFF">网站首页</a>
-        </td>
-        <td width="11%" nowrap><a href="#" target="_self" onClick="logout();"><img src="../images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
-        <td width="4%">&nbsp;</td>
-      </tr>
-      <tr>
-        <td height="19" colspan="3">&nbsp;</td>
-        </tr>
-    </table></td>
-  </tr>
-</table>
+		</script>
+		</a>
+</div>
+
+<ul id="menu">
+        
+      <li><a href="right" target="main" >管理首页</a></li>
+      <li><a href="../index" title="生成首页" target="_blank" >网站首页</a></li>
+       
+     
+	<li id="quit"><a href="#" target="_self" onClick="logout();"><img src="../images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></li>
+</ul>
+
+	</div>
+</div>    
 </body>
 </html>

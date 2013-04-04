@@ -28,8 +28,9 @@ function logout(){
 <body>
 <div class="header-wrap">
 <div id="header">
+
 <div id="logo">
-	<a href="http://www.j2cms.com" target="_blank" title="点此下载最新版本">J2CMS</a>
+	
 </div>
 <div id="top_quick_links">
 	<a>${(user.username)!""}， 您好！今天是
@@ -48,13 +49,16 @@ function logout(){
 				document.write(date);
 		// -->
 		</script>
+		&nbsp;&nbsp;
+		<a href="../index" title="生成首页" target="_blank" >网站首页</a>
+		
 		</a>
 </div>
 
 <ul id="menu">
-        
-      <li class="home"><a href="right" target="main" >管理首页</a></li>
-      <li class="home"><a href="../index" title="生成首页" target="_blank" >网站首页</a></li>
+        <!--
+     
+     
        
        <li>
 	    <a onmouseover="showdrop('drop_order')" onmouseout="hidedrop('drop_order')">订单管理</a>
@@ -75,8 +79,8 @@ function logout(){
 	    </div>
 	    </div>
 	</li>
-       
-     
+       -->
+    
 	<li class="quit"><a href="#" target="_self" onClick="logout();"><img src="../images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></li>
 </ul>
 

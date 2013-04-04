@@ -29,7 +29,7 @@ public class ConfigListener implements ServletContextListener {
 			config.setIp(ip);
 			config.setCtp(servletContext.getContextPath());
 			try {
-				String logined = "<html><head><title>管理中心-Powered by J2CMS</title><meta http-equiv=Content-Type content=text/html;charset=utf-8></head><frameset rows='64,*'  frameborder='NO' border='0' framespacing='0'><frame src='manage/top' noresize='noresize' frameborder='NO' name='topFrame' scrolling='no' marginwidth='0' marginheight='0' target='main' /><frameset cols='200,*' id='frame'><frame src='manage/left' name='leftFrame' noresize='noresize' marginwidth='0' marginheight='0' frameborder='0' scrolling='auto' target='main' /><frame src='manage/right' name='main' marginwidth='0' marginheight='0' frameborder='0' scrolling='auto' target='_self' /></frameset></frameset><noframes><body></body></noframes></html>";
+				String logined = "<html><head><title>管理中心-Powered by J2CMS</title><meta http-equiv=Content-Type content=text/html;charset=utf-8></head><frameset rows='85,*'  frameborder='NO' border='0' framespacing='0'><frame src='manage/top' noresize='noresize' frameborder='NO' name='topFrame' scrolling='no' marginwidth='0' marginheight='0' target='main' /><frameset cols='200,*' id='frame'><frame src='manage/left' name='leftFrame' noresize='noresize' marginwidth='0' marginheight='0' frameborder='0' scrolling='auto' target='main' /><frame src='manage/right' name='main' marginwidth='0' marginheight='0' frameborder='0' scrolling='auto' target='_self' /></frameset></frameset><noframes><body></body></noframes></html>";
 				servletContext.setAttribute("logined", logined);
 			} catch (Exception e) {
 				System.out.println("操作失败!");

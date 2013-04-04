@@ -9,15 +9,31 @@ function logout(){
 	return false;
 }
 </script>
-<link href="../css/skin.css" rel="stylesheet" type="text/css"/>
+
+<link href="../css/new_style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+        function showdrop(drop) {
+            var drop_div = document.getElementById(drop);
+            drop_div.style.display = "inline";
+        }
+        function hidedrop(drop) {
+            var drop_div = document.getElementById(drop);
+            drop_div.style.display = "none";
+        }
+        
+    </script>
+
 </head>
-<body leftmargin="0" topmargin="0">
-<table width="100%" height="64" border="0" cellpadding="0" cellspacing="0" class="admin_topbg">
-  <tr>
-    <td  width="40%" height="64"><a href="http://www.j2cms.com" target="_blank" title="点此下载最新版本"><img border="0" src="../images/j2cms_logo.gif"  height="64" alt=""/></a></td>
-    <td width="60%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="85%" height="38" class="admin_txt"><b>${(user.username)!""}</b>， 您好！今天是
+<body>
+<div class="header-wrap">
+<div id="header">
+
+<div id="logo">
+	
+</div>
+<div id="top_quick_links">
+	<a>${(user.username)!""}， 您好！今天是
         <script language=javascript type=text/javascript>
 		<!--
 				var enabled = 0; today = new Date();
@@ -32,20 +48,43 @@ function logout(){
 				date = (today.getFullYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日" + day +"";
 				document.write(date);
 		// -->
-	  </script>
-      &nbsp;&nbsp;
-      <a href="right" target="main" style="color:#FFF">管理首页</a>
-      &nbsp;&nbsp;
-      <a href="../index" title="生成首页" target="_blank" style="color:#FFF">网站首页</a>
-        </td>
-        <td width="11%" nowrap><a href="#" target="_self" onClick="logout();"><img src="../images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
-        <td width="4%">&nbsp;</td>
-      </tr>
-      <tr>
-        <td height="19" colspan="3">&nbsp;</td>
-        </tr>
-    </table></td>
-  </tr>
-</table>
+		</script>
+		&nbsp;&nbsp;
+		<a href="../index" title="生成首页" target="_blank" >网站首页</a>
+		
+		</a>
+</div>
+
+<ul id="menu">
+        <!--
+     
+     
+       
+       <li>
+	    <a onmouseover="showdrop('drop_order')" onmouseout="hidedrop('drop_order')">订单管理</a>
+	    <div onmouseover="showdrop('drop_order')" onmouseout="hidedrop('drop_order')" id="drop_order" class="dropdown-column">
+	    <div class="col">
+	    <ul>
+	    <li class="view_orders">
+	    <a href="admin_vieworder.aspx">
+	    <span>查看订单</span>
+	    <span class="hint">按时间，卖家，状态查看订单</span>
+	    </a></li>
+	    <li class="sale_report"> 
+	    <a href="admin_tj.aspx">
+	    <span>销售报告</span>
+	    <span class="hint">按时间段，卖家查看销售统计</span>
+	    </a></li>
+	    </ul>
+	    </div>
+	    </div>
+	</li>
+       -->
+    
+	<li class="quit"><a href="#" target="_self" onClick="logout();"><img src="../images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></li>
+</ul>
+
+	</div>
+</div>    
 </body>
 </html>

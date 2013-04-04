@@ -10,112 +10,19 @@ function logout(){
 }
 </script>
 
-<style>
-body {
-background-color: #F3F3F3;
-}
-.header-wrap {
-width: 100%;
-min-width: 800px;
-height: 95px;
-position: relative;
-z-index: 21;
-}
-#header {
-background: #0899C9;
-padding: 14px 0 0 0;
-margin: 0 auto;
-width: 100%;
-min-width: 800px;
-height: 38px;
-}
-#logo {
-font:bold;
-padding: 0 0 0 30px;
-float: left;
-height: 29px;
-font-weight:bold;
-}
-#logo a {
-font-size: 14px;
-color: white;
-text-decoration: none;
-}
-#top_quick_links {
-float: right;
-padding-right: 25px;
-}
+<link href="../css/new_style.css" rel="stylesheet" type="text/css" />
 
-#top_quick_links a{
-font-size: 12px;
-color: #DAF1F9;
-margin-right:10px;
-text-decoration: none;
-}
-
-#top_quick_links a:hover{
-font-size: 12px;
-color: #ffffff;
-margin-right:10px;
-text-decoration:underline;
-}
-
-#menu{
-list-style: none;
-width:auto;
-height: 39px;
-padding: 0px 30px 0px 30px;
-background: #E5E5E5 repeat-x;
-clear: both;
-}
-ul {
-padding: 0;
-margin: 0;
-list-style-type: none;
-}
-
-
-#menu li{
-float: left;
-display: block;
-text-align: center;
-position: relative;
-border: none;
-margin-right: 1px;
-}
-
-#menu li#quit{
-float:right;
-}
-
-#menu li a:hover
-{
-	background: #D2D2D2 50% -8px;
-	font-weight:bold;
-}
-
-
-#menu li a {
-font-size: 15px;
-color: #000000;
-display: block;
-outline: 0;
-text-decoration: none;
-padding: 8px 18px 10px;
-cursor:auto;
-text-transform: capitalize;
-text-shadow: 1px 1px #EBEBEB;
-}
-
-#menu ul, #menu li, #alt_menu ul, #alt_menu li 
-{
-line-height: 21px;
-text-align: left;
-}
-
-
-</style>
-
+<script type="text/javascript">
+        function showdrop(drop) {
+            var drop_div = document.getElementById(drop);
+            drop_div.style.display = "inline";
+        }
+        function hidedrop(drop) {
+            var drop_div = document.getElementById(drop);
+            drop_div.style.display = "none";
+        }
+        
+    </script>
 
 </head>
 <body>
@@ -146,11 +53,31 @@ text-align: left;
 
 <ul id="menu">
         
-      <li><a href="right" target="main" >管理首页</a></li>
-      <li><a href="../index" title="生成首页" target="_blank" >网站首页</a></li>
+      <li class="home"><a href="right" target="main" >管理首页</a></li>
+      <li class="home"><a href="../index" title="生成首页" target="_blank" >网站首页</a></li>
+       
+       <li>
+	    <a onmouseover="showdrop('drop_order')" onmouseout="hidedrop('drop_order')">订单管理</a>
+	    <div onmouseover="showdrop('drop_order')" onmouseout="hidedrop('drop_order')" id="drop_order" class="dropdown-column">
+	    <div class="col">
+	    <ul>
+	    <li class="view_orders">
+	    <a href="admin_vieworder.aspx">
+	    <span>查看订单</span>
+	    <span class="hint">按时间，卖家，状态查看订单</span>
+	    </a></li>
+	    <li class="sale_report"> 
+	    <a href="admin_tj.aspx">
+	    <span>销售报告</span>
+	    <span class="hint">按时间段，卖家查看销售统计</span>
+	    </a></li>
+	    </ul>
+	    </div>
+	    </div>
+	</li>
        
      
-	<li id="quit"><a href="#" target="_self" onClick="logout();"><img src="../images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></li>
+	<li class="quit"><a href="#" target="_self" onClick="logout();"><img src="../images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></li>
 </ul>
 
 	</div>

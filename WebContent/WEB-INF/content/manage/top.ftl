@@ -12,17 +12,7 @@ function logout(){
 
 <link href="../css/new_style.css" rel="stylesheet" type="text/css" />
 
-<script type="text/javascript">
-        function showdrop(drop) {
-            var drop_div = document.getElementById(drop);
-            drop_div.style.display = "inline";
-        }
-        function hidedrop(drop) {
-            var drop_div = document.getElementById(drop);
-            drop_div.style.display = "none";
-        }
-        
-    </script>
+
 
 </head>
 <body>

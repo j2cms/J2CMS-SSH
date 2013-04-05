@@ -106,7 +106,7 @@ border-radius: 3px;
 
 /* admin  */
 .header-wrap {
-max-width: 100%;
+max-width: 1321px;
 min-width: 1200px;
 background: url(../images2/header_bg.gif) repeat-x top;
 height: 95px;
@@ -115,18 +115,81 @@ z-index: 21;
 }
 #header {
 background: #0899C9 url(../images2/header_bg.gif) repeat-x top;
-padding: 14px 0 0 25px;
+padding: 14px 0 0 0;
 margin: 0 auto;
-max-width: 100%;
+max-width: 1321px;
 min-width: 1200px;
 height: 68px;
 }
+
+.adminleftmenu{
+	float:left;
+color:#19AADA;
+background: #ffffff ;
+height:32px;
+width:180px;
+margin:0px;
+-moz-border-radius:0 4px 4px 0;
+-webkit-border-radius:0 4px 4px 0;
+border-radius:0 4px 4px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+-moz-box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+-webkit-box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+border: 1px solid #CDCED0;
+font-size: 15px;
+padding: 8px 0 0 15px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.adminleftmenu:hover{
+text-decoration:underline;
+}
+
+.adminleftsubmenu{
+	float:left;
+display:none;
+color:#19AADA;
+font-size: 12px;
+font-weight:bold;
+width:180px;
+cursor:pointer;
+margin:0px;
+list-style: none;
+padding: 0;
+}
+
+
+.adminleftsubmenu li{
+background: #EEFFFF;
+height:25px;
+width:180px;
+padding: 8px 0 0 15px;
+border-top:1px #e4e4e4 dashed;
+margin:0px;
+float:left;
+}
+
+.adminleftsubmenu li a{
+width:180px;
+color:#19AADA;
+text-decoration:none;
+}
+
+.adminleftsubmenu li a:hover{
+text-decoration:underline;
+}
+
+.adminleftsubmenu li:hover{
+background: #CAE1FF;
+font-size: 12px;
+text-decoration:underline;
+}
+
 #logo {
-padding: 0 30px 0 30px;
+padding: 0 0 0 30px;
 float: left;
 height: 29px;
-width:200px;
-background: url(../images/logo/J2-LOGO-2.png) no-repeat
 }
 #logo a {
 font-size: 14px;
@@ -200,17 +263,15 @@ background-color: white;
 }
 #menu li.home :hover
 {
-	background: #D2D2D2;
+	background-color: #D2D2D2;
 	}
-
-#menu li.quit
+#menu li.quit:hover
 {
+	background:#E5E5E5 url(../images2/mm_bg.gif) repeat-x;
+	}
+#menu li.quit{
 	float:right;
-	}
-#menu li.quit :hover
-{
-	background: #E5E5E5 url(../images2/mm_bg.gif) repeat-x;
-	}
+}
 .dropdown-column 
 {
 margin: 0 auto;
@@ -747,7 +808,7 @@ color:#555;
 cursor: pointer;
 white-space: nowrap;
 padding: 2px 5px 3px;
-background: #E8E8E8 url(../images2/buttons_bg.png) no-repeat -30px -180px;
+background: #E8E8E8 url(../images/buttons_bg.png) no-repeat -30px -180px;
 border: 1px solid #CFCFCF;
 display: inline-block;
 height: 24px;
@@ -872,3 +933,5 @@ color: #0899C9;
 margin-right: 10px;
 margin-left: -189px;
 }
+
+

@@ -2,3 +2,5 @@
 /.classpath
 /build
 /.project
+/.gitignore
+/src/META-INF/persistence.xml

@@ -3,11 +3,18 @@
 		document.frmAction.action = "add";
 		document.frmAction.submit();
 	}
+	function editSingle2()
+	{
+		alert(1);
+		//document.getElementById("id").value=id;
+		//document.frmAction.action = "edit";
+		//document.frmAction.submit();
+	}
 	function edit() 
 	{
    		 var id;
     	 var count = 0;
-   		 var chk = document.all["ids"];
+   		 var chk = document.getElementsByName("ids");
    	 	 if(chk == null) 
    	 	 {
        	 alert("请勾选要修改的记录！");
@@ -42,26 +49,30 @@
        		 alert("请仅勾选一个记录修改！");
         	 return  false;
     	 }
-    	 document.all["id"].value=id;
+    	 document.getElementById("id").value=id;
     	 document.frmAction.action = "edit";
  		 document.frmAction.submit();
 
 	}
+	
+	
+	
 	function editSingle(id)
 	{
-		document.all["id"].value=id;
+		document.getElementById("id").value=id;
 		document.frmAction.action = "edit";
 		document.frmAction.submit();
 	}
 	function query() 
 	{
 		document.frmAction.submit();
-   		//document.all("frmAction").submit();
+   		//document.getElementById("frmAction").submit();
 	}
 	function del() 
 	{
     	var count = 0;
-    	var chk = document.all["ids"];
+//    	var chk = document.getElementsByName("ids");
+    	var chk = document.getElementsByName("ids");
     	if(chk == null) 
     	{
         alert("请勾选要删除的记录！");
@@ -89,7 +100,7 @@
         	alert("请勾选要删除的记录！");
         	return  false;
    	 	}
-    	if(document.all["selector.checkState"].value=="recycle")
+    	if(document.getElementById["selector.checkState"].value=="recycle")
     	{
     		if(confirm("操作不可恢复,您确定删除吗？")){
     			document.frmAction.action = "delete";
@@ -105,15 +116,16 @@
 	
 	function delSingle(id,checkState) 
 	{
+		
 		if(checkState=="recycle"&&confirm("操作不可恢复,您确定删除吗？"))
     		{
-			document.all["id"].value=id;
+			document.getElementById("id").value=id;
     		document.frmAction.action = "delete";
 //        	location.href='delete?id='+id;
         	document.frmAction.submit();
     		}
     	else{
-    		document.all["id"].value=id;
+    		document.getElementById("id").value=id;
     		document.frmAction.action = "recycle";
     		document.frmAction.submit();
     		}
@@ -124,7 +136,8 @@
 
 	function selectAll(allSelect) 
 	{
-    	var chk = document.all["ids"];
+    	var chk = document.getElementsByName("ids");
+    	
     	if(chk == null) 
     	{
         	return  false;
@@ -143,14 +156,14 @@
 	}	
 	function pageQuery(page) 
 	{
-		document.all("pageView.currentpage").value=page;   
-		document.all("frmAction").submit();
+		document.getElementById("pageView.currentpage").value=page;   
+		document.getElementById("frmAction").submit();
 	}
 	
 	function html() 
 	{
     	var count = 0;
-    	var chk = document.all["ids"];
+    	var chk = document.getElementsByName("ids");
     	if(chk == null) 
     	{
         alert("请勾选要生成HTML的记录！");

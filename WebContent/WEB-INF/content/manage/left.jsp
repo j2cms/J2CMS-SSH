@@ -22,7 +22,7 @@ box-shadow: 0 4px 15px rgba(0,0,0,0.25);
 -webkit-box-shadow: 0 4px 15px rgba(0,0,0,0.25);
 border: 1px solid #CDCED0;
 font-size: 15px;
-padding: 8px 0 0 15px;
+padding: 8px 0 0 65px;
 font-weight:bold;
 cursor:pointer;
 }
@@ -47,21 +47,11 @@ padding: 0;
 .adminleftsubmenu li{
 background: #EEFFFF;
 height:25px;
-width:180px;
-padding: 8px 0 0 15px;
+width:175px;
+padding: 8px 0 0 70px;
 border-top:1px #e4e4e4 dashed;
 margin:0px;
 float:left;
-}
-
-.adminleftsubmenu li a{
-width:180px;
-color:#19AADA;
-text-decoration:none;
-}
-
-.adminleftsubmenu li a:hover{
-text-decoration:underline;
 }
 
 .adminleftsubmenu li:hover{

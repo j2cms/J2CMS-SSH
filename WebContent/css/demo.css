@@ -2,9 +2,16 @@
 img{
 	vertical-align:middle;
 }
-button,input,select,value {
+
+button,input,value {
 	 vertical-align:middle;
 	 height:30px;
+	 line-height:28px;  
+}
+
+select {
+	 vertical-align:middle;
+	 height:33px;
 	 line-height:28px;  
 }
 

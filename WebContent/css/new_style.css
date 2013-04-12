@@ -1,7 +1,24 @@
-﻿body {
+﻿*{padding:0;margin:0}
+body {
 background-color: #F3F3F3;
 font-family:"微软雅黑";
+font-size:12px;
 }
+
+button,input,value {
+	 vertical-align:middle;
+	 height:30px;
+	 line-height:28px;  
+}
+
+select {
+	 vertical-align:middle;
+	 height:34px;
+	 line-height:33px;  
+}
+
+
+
 
 .em 
 {
@@ -523,6 +540,13 @@ text-decoration:none;
 {
 	float:left;
     width:50px;
+    line-height:20px;
+    min-height:20px;
+	}
+.vieworder_box_60_40
+{
+	float:left;
+    width:60px;
     line-height:20px;
     min-height:20px;
 	}

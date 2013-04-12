@@ -28,19 +28,19 @@
         <div class="statistics-body-order">
         
             <div class="vieworder_row_top" style="padding:0px;margin:0px;">
-              <div class="vieworder_box_80_40">
+              <div class="vieworder_box_60_40">
 				<input type="button" class="search-button" onclick="add()" value=" 发 布 " />
               </div>
               
-              <div class="vieworder_box_80_40" >
+              <div class="vieworder_box_60_40" >
                 <input type="button" class="search-button"  onclick="edit()"value=" 修 改 " />&nbsp;&nbsp; 
               </div>
                 
-              <div class="vieworder_box_80_40">
+              <div class="vieworder_box_60_40">
                 <input type="button" class="search-button"  onclick="del()" value=" 删 除 " /> 
               </div>
 			
-              <div class="vieworder_box_80_40">
+              <div class="vieworder_box_60_40">
                 <input class="search-button"   value="生成HTML" type="button" onclick="html()"  />
               </div>
               
@@ -118,7 +118,7 @@
 				<option value="recycle">-回收站</option>
 				</select> <script>document.getElementById("selector.checkState").value ='${selector.checkState}';</script>
 	          </div>
-	          <div class="vieworder_box_80_40"><input type="submit" style="margin:-2px 0 0 0;" class="search-button" name="button2" id="button2" value="查 询"/></div>
+	          <div class="vieworder_box_80_40"><input type="submit" style="margin:-2px 0 0 0;" class="search-button" name="button2" id="button2" value=" 查 询 "/></div>
 			
 		</div>
 			

@@ -6,31 +6,40 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel=stylesheet href="../../css/demo.css" type="text/css"/>
 <link href="../../css/bodystyle.css" rel="stylesheet" type="text/css"/>
+
+<link href="../../css/new_style.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
 <form name="addForm" method="post" action="update">
-<table width="100%" border="1" cellpadding="0" cellspacing="0">
-	<tr >
-		<td height="27px" colspan="3" background="/images/menu_bg.jpg">&nbsp;&nbsp;
-        <b class="title">修改文章:${entity.id}</b>
-        <input name="selector.id" type="hidden" id="selector.id" value="${selector.id}"/>
-        <input name="selector.title" type="hidden" id="selector.title" value="${selector.title}"/>
-        <input name="selector.channel.id" type="hidden" id="selector.channel.id" value="${selector.channel.id}"/>
-        <input name="sortType" type="hidden" id="sortType" value="${sortType}"/>
-        <input name="sortord" type="hidden" id="sortord" value="${sortord}"/>
-        <input name="selector.releaseDate" type="hidden" id="selector.releaseDate" value="${selector.releaseDate}"/>
-        <input name="selector.user.username" type="hidden" id="selector.user.username" value="${selector.user.username}"/>
-        <input name="selector.recommendLevel" type="hidden" id="selector.recommendLevel" value="${selector.recommendLevel}"/>
-        <input name="selector.checkState" type="hidden" id="selector.checkState" value="${selector.checkState}"/>
-        <input name="pageView.maxresult" type="hidden" id="pageView.maxresult" value="${pageView.maxresult}"/>
-        <input name="pageView.currentpage" type="hidden" id="pageView.currentpage" value="${pageView.currentpage}"/>
-                
-        <input name="entity.user.id" type="hidden" id="entity.user.id" value="${entity.user.id>0?entity.user.id:user.id}"/>
-        <input name="entity.id" type="hidden" id="entity.id" value="${entity.id}"/>
-        <input name="entity.visitTotal" type="hidden" id="entity.visitTotal" value="${entity.visitTotal}"/>
-      
-        </td>
-	</tr>
+<input name="selector.id" type="hidden" id="selector.id" value="${selector.id}"/>
+<input name="selector.title" type="hidden" id="selector.title" value="${selector.title}"/>
+<input name="selector.channel.id" type="hidden" id="selector.channel.id" value="${selector.channel.id}"/>
+<input name="sortType" type="hidden" id="sortType" value="${sortType}"/>
+<input name="sortord" type="hidden" id="sortord" value="${sortord}"/>
+<input name="selector.releaseDate" type="hidden" id="selector.releaseDate" value="${selector.releaseDate}"/>
+<input name="selector.user.username" type="hidden" id="selector.user.username" value="${selector.user.username}"/>
+<input name="selector.recommendLevel" type="hidden" id="selector.recommendLevel" value="${selector.recommendLevel}"/>
+<input name="selector.checkState" type="hidden" id="selector.checkState" value="${selector.checkState}"/>
+<input name="pageView.maxresult" type="hidden" id="pageView.maxresult" value="${pageView.maxresult}"/>
+<input name="pageView.currentpage" type="hidden" id="pageView.currentpage" value="${pageView.currentpage}"/>  
+<input name="entity.user.id" type="hidden" id="entity.user.id" value="${entity.user.id>0?entity.user.id:user.id}"/>
+<input name="entity.id" type="hidden" id="entity.id" value="${entity.id}"/>
+<input name="entity.visitTotal" type="hidden" id="entity.visitTotal" value="${entity.visitTotal}"/>
+        
+<div id="main_frame">
+<div id="main_column">
+
+<div>
+	<div class="mainbox-title-container">
+	    <div class="mainbox-title"> 修改文章：${entity.id}
+	    </div>
+	</div>
+	
+    <div class="mainbox-body">
+    
+	<table width="100%" border="1" cellpadding="0" cellspacing="0"> 
+	
 	<tr>
 		<td height="25px" width="10%" align="right">栏目：</td>
 		<td colspan="2"> 
@@ -107,16 +116,14 @@
 	</tr>
 	<tr>
 		<td height="25px" align="right" nowrap >标题缩略图：</td>
-		<td>
-			<div id="p1" >
+		<td colspan="2">
 	        <input name="entity.titleImg" type="text" id="entity.titleImg" size=40
 				maxlength="80" style="display: " value="${entity.contentImg}"/> 
-		    </div>
 		</td>
 	</tr>
 	<tr>
 		<td height="25px" align="right">内容缩略图：</td>
-		<td>
+		<td colspan="2">
 			<div id="p1" >
 	        <input name="entity.contentImg" type="text" id="entity.contentImg" size=40
 				maxlength="80" style="display: " value="${entity.contentImg}"/> 
@@ -149,6 +156,14 @@
 		</td>
 	</tr>
 </table>
+
+ </div>
+ </div>
+ 
+ 
+</div>
+</div>
+
 </form>
 <br/>
 <br/>

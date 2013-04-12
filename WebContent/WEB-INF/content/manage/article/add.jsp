@@ -9,35 +9,32 @@
 <script language=Javascript src="/js/article.js"></script>
 onSubmit="return checkArticle();"
  -->
- <link href="../../css/new_style.css" rel="stylesheet" type="text/css" />
+<link href="../../css/new_style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <form name="addForm" method="post" action="save">
-
+<input name="selector.id" type="hidden" id="selector.id" value="${selector.id}"/>
+<input name="selector.title" type="hidden" id="selector.title" value="${selector.title}"/>
+<input name="selector.channel.id" type="hidden" id="selector.channel.id" value="${selector.channel.id}"/>
+<input name="sortType" type="hidden" id="sortType" value="${sortType}"/>
+<input name="sortord" type="hidden" id="sortord" value="${sortord}"/>
+<input name="selector.releaseDate" type="hidden" id="selector.releaseDate" value="${selector.releaseDate}"/>
+<input name="selector.user.username" type="hidden" id="selector.user.username" value="${selector.user.username}"/>
+<input name="selector.recommendLevel" type="hidden" id="selector.recommendLevel" value="${selector.recommendLevel}"/>
+<input name="selector.checkState" type="hidden" id="selector.checkState" value="${selector.checkState}"/>
+<input name="pageView.maxresult" type="hidden" id="pageView.maxresult" value="${pageView.maxresult}"/>
+<input name="pageView.currentpage" type="hidden" id="pageView.currentpage" value="${pageView.currentpage}"/>
+<input name="entity.user.id" type="hidden" id="entity.user.id" value="${entity.user.id>0?entity.user.id:user.id}"/>
 
 <div id="main_frame">
 <div id="main_column">
 
 <div>
-<div class="mainbox-title-container">
-     <div class="mainbox-title">
-    发布文章：${entity.id}
-    
- <input name="selector.id" type="hidden" id="selector.id" value="${selector.id}"/>
-        <input name="selector.title" type="hidden" id="selector.title" value="${selector.title}"/>
-        <input name="selector.channel.id" type="hidden" id="selector.channel.id" value="${selector.channel.id}"/>
-        <input name="sortType" type="hidden" id="sortType" value="${sortType}"/>
-        <input name="sortord" type="hidden" id="sortord" value="${sortord}"/>
-        <input name="selector.releaseDate" type="hidden" id="selector.releaseDate" value="${selector.releaseDate}"/>
-        <input name="selector.user.username" type="hidden" id="selector.user.username" value="${selector.user.username}"/>
-        <input name="selector.recommendLevel" type="hidden" id="selector.recommendLevel" value="${selector.recommendLevel}"/>
-        <input name="selector.checkState" type="hidden" id="selector.checkState" value="${selector.checkState}"/>
-        <input name="pageView.maxresult" type="hidden" id="pageView.maxresult" value="${pageView.maxresult}"/>
-        <input name="pageView.currentpage" type="hidden" id="pageView.currentpage" value="${pageView.currentpage}"/>
-        
-        <input name="entity.user.id" type="hidden" id="entity.user.id" value="${entity.user.id>0?entity.user.id:user.id}"/>
-    </div>
-    </div>
+	<div class="mainbox-title-container">
+	    <div class="mainbox-title"> 发布文章：${entity.id}
+	    </div>
+	</div>
+	
     <div class="mainbox-body">
     <table cellpadding="0" cellspacing="0" border="0" class="table-fixed">
     <tbody>
@@ -160,8 +157,8 @@ onSubmit="return checkArticle();"
         		<textarea name="entity.summary"  rows="3" cols="85" id="entity.summary" value="${entity.summary}"></textarea> <span class="info1">小于200字</span>
         	</div>
         	
-        	<div class="form-field " style="min-width:700px;">
-        		<FCK:editor instanceName="entity.content" height="400px" width="700px"  basePath="">
+        	<div class="form-field " style="min-width:800px;">
+        		<FCK:editor instanceName="entity.content" height="400px" width="800px"  basePath="">
 					<jsp:attribute name="value">${entity.content}</jsp:attribute>
 				</FCK:editor>
         		

@@ -34,7 +34,7 @@ public abstract class EntityAction<T> extends BaseAction implements ModelDriven<
 	// 实体类的名字
 	protected String entityClassName = "";
 	// 实体对象页表
-	protected PageView<T> pageView = new PageView<T>(15,1);
+	protected PageView<T> pageView = new PageView<T>();
 	// 批量删除的id
 	protected Integer[] ids={0};
 

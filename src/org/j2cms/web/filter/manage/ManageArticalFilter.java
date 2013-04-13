@@ -21,7 +21,8 @@ public class ManageArticalFilter implements Filter {
 		User user = WebUtil.getUser(request);
 		if (user.getGroup()==null||true!=user.getGroup().getManageArticle()) {
 			HttpServletResponse response = (HttpServletResponse) res;
-			response.sendRedirect("/util/403");
+			String ctp=request.getSession().getServletContext().getContextPath();
+			response.sendRedirect(ctp+"/util/403");
 			return;
 		}
 		filterChain.doFilter(req, res);

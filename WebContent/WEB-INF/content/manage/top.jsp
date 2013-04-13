@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=utf-8" language="java" errorPage=""%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -23,7 +24,7 @@ function logout(){
 	
 </div>
 <div id="top_quick_links">
-	<a>${(user.username)!""}， 您好！今天是
+	<a>${(user.username)}， 您好！今天是
         <script language=javascript type=text/javascript>
 		<!--
 				var enabled = 0; today = new Date();

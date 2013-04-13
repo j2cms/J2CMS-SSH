@@ -21,7 +21,8 @@ public class ManageChannelFilter implements Filter {
 		User user = WebUtil.getUser(request);
 		if (user.getGroup()==null||user.getGroup().getManageChannel()!= true) {
 			HttpServletResponse response = (HttpServletResponse) res;
-			response.sendRedirect("/util/403");
+			String ctp=request.getSession().getServletContext().getContextPath();
+			response.sendRedirect(ctp+"/util/403");
 			return;
 		}
 		filterChain.doFilter(req, res);

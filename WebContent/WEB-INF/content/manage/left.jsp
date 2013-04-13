@@ -55,7 +55,7 @@ float:left;
 }
 
 .adminleftsubmenu li:hover{
-background: #CAE1FF;
+background:#CAE1FF; /** #CAE1FF;*/
 font-size: 12px;
 text-decoration:underline;
 }
@@ -162,14 +162,14 @@ font-family:"微软雅黑";
 				<ul id="ul3" class="adminleftsubmenu">
 					<li id="li31" onclick="setlis('li31','user/add')">增加用户</li>
 					<li id="li32" onclick="setlis('li32','user/list')">用户管理</li>
-					<li id="li33" onclick="setlis('li33','group/list')">用户组</li>
+					<li id="li33" onclick="setlis('li33','group/list')">用户组管理</li>
 				</ul>
 			</li>
 			<li>
 				<div class="adminleftmenu" onclick="showdrop('ul4')">网站常规管理</div>
 				<ul id="ul4" class="adminleftsubmenu">
 					<li id="li41" onclick="setlis('li41','config/edit')">基本设置</li>
-					<li id="li42" onclick="setlis('li42','flash/list')">首页FLASH</li>
+					<li id="li42" onclick="setlis('li42','flash/list')">图片广告</li>
 					<li id="li43" onclick="setlis('li43','config/makeIndexHtml')">生成首页</li>
 				</ul>
 			</li>

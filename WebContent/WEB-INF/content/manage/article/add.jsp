@@ -47,8 +47,7 @@
 																<option value="${channel.id}">${channel.name}</option>
 															</c:forEach>
 													</select> <script>
-														document
-																.getElementById("entity.channel.id").value = '${selector.channel.id>1?selector.channel.id:1}';
+														document.getElementById("entity.channel.id").value = '${selector.channel.id>1?selector.channel.id:1}';
 													</script> &nbsp;允许浏览用户组 <select name="entity.group.id" id="entity.group.id">
 															<c:forEach var="group" items="${groups}">
 																<option value="${group.id}">${group.name}</option>

@@ -28,7 +28,7 @@
 
 				<div>
 					<div class="mainbox-title-container">
-						<div class="mainbox-title">修改文章：${entity.id}</div>
+						<div class="mainbox-title">修改栏目：${entity.id}</div>
 					</div>
 
 					<div class="mainbox-body">
@@ -42,7 +42,7 @@
 											<table width="100%" border="0px;" cellpadding="0px;" cellspacing="2px;">
 
 												<tr>
-													<td height="25px" width='10%' align='right'>上级栏目</td>
+													<td height="25px" width='10%' align='right'>上级栏目：</td>
 													<td><select name="entity.father.id" id="entity.father.id">
 															<c:forEach var="chs" items="${channels}">
 																<option value="${chs.id}">${chs.name}</option>
@@ -62,15 +62,15 @@
 													</script></td>
 												</tr>
 												<tr>
-													<td height="25px" align='right' nowrap>排序ID&nbsp;</td>
+													<td height="25px" align='right' nowrap>排序ID：</td>
 													<td><input type="text" value="${entity.rankid}" id="entity.rankid"  name="entity.rankid" /></td>
 												</tr>
 												<tr>
-													<td height="25px" align='right' nowrap>栏目名&nbsp;</td>
+													<td height="25px" align='right' nowrap>栏目名：</td>
 													<td><input type="text" name="entity.name" id="entity.name"  value="${entity.name }" /></td>
 												</tr>
 												<tr>
-													<td height="25px" align='right' nowrap>单页面&nbsp;</td>
+													<td height="25px" align='right' nowrap>单页面：</td>
 													<td><input type="checkbox" name="entity.single" id="entity.single" value="true" />&nbsp;&nbsp;&nbsp;[此栏目将以单个页面而不是文章列表的形式显示，显示内容为栏目内容]</td>
 													<c:if test="${entity.single==true}">
 														<script>
@@ -80,7 +80,7 @@
 													</c:if>
 												</tr>
 												<tr>
-													<td height="25px" align='right' nowrap>导航栏&nbsp;</td>
+													<td height="25px" align='right' nowrap>导航栏：</td>
 													<td><input type="checkbox" name="entity.display" id="entity.display" value="true" />&nbsp;&nbsp;&nbsp;[此栏目将在导航栏中显示]</td>
 													<c:if test="${entity.display==true}">
 														<script>
@@ -90,7 +90,7 @@
 													</c:if>
 												</tr>
 												<tr>
-													<td height="25px" align='right' nowrap>首页中&nbsp;</td>
+													<td height="25px" align='right' nowrap>首页中：</td>
 													<td><input type="checkbox" name="entity.displayInIndex" id="entity.displayInIndex" value="true" />&nbsp;&nbsp;&nbsp;[此栏目下文章列表将在首页中部显示，不适合单页面]</td>
 													<c:if test="${entity.displayInIndex==true}">
 														<script>

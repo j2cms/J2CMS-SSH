@@ -11,12 +11,12 @@
 <script language=Javascript src="/js/article.js"></script>
 <script>
 function check() {
-	if(document.all("entity.name").value.length==0) {
+	if(document.getElementById("entity.name").value.length==0) {
 		alert("角色名不能为空!");
-		document.all("entity.name").focus();
+		document.getElementById("entity.name").focus();
 		return false;
 	};	
-	document.all("frmAction").submit();
+	document.getElementById("frmAction").submit();
 }
 function back() {
 	history.go(-1);

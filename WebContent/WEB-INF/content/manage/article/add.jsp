@@ -7,7 +7,7 @@
 <link href="../../css/new_style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<form name="addForm" method="post" action="save">
+	<form name="frmAction" id ="frmAction" method="post" action="save">
 	 <input name="selector.id" type="hidden" id="selector.id" value="${selector.id}"/>
 	 <input name="selector.title" type="hidden" id="selector.title" value="${selector.title}"/>
 	 <input name="selector.channel.id" type="hidden" id="selector.channel.id" value="${selector.channel.id}"/>

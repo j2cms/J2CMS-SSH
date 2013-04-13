@@ -4,130 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link rel="stylesheet" href="../../css/demo.css" type="text/css"/>
-<script language="javascript">
-	function add() 
-	{
-   		location.href = "add";
-	}
-	function edit() 
-	{
-   		 var id;
-    	 var count = 0;
-   		 var chk = document.all["checkID"];
-   	 	 if(chk == null) 
-   	 	 {
-       	 alert("请选择要编辑的留言！");
-         return false;
-    	 }
-    		if(chk[0] == null) 
-    		{
-        		if(chk.checked) 
-        		{
-            	id = chk.value;
-            	count++;
-        		}
-    		}
-    		else 
-    		{
-        		for(i=0;i<chk.length;i++) 
-        		{
-            		if(chk[i].checked) 
-            		{
-               			 count++;
-                		 id = chk[i].value;
-            		}
-        		}
-    		}
-   		 if(count==0) 
-   		 {
-        	alert("请选择要编辑的留言！");
-       		 return false;
-    	 }
-    	 if(count>1) 
-    	 {
-       		 alert("请仅选择一个留言编辑！");
-        	 return  false;
-    	 }
-   			 //alert(id);
-    		location.href = "edit?id="+id;
-	}
-	function query() 
-	{
-		//alert("edit!"+value);
-   		// location.href = "query.jsp";
-   		document.all("frmAction").submit();
-	}
-	function del() 
-	{
-    	var count = 0;
-    	var chk = document.all["checkID"];
-    	if(chk == null) 
-    	{
-        alert("请选择要删除的留言！");
-        return  false;
-    	}
-    	if(chk[0] == null) 
-    	{
-        	if(chk.checked) 
-        	{
-            count++;
-        	}
-   	 	}
-   		 else 
-    	{
-        	for(i=0;i<chk.length;i++) 
-        	{
-            	if(chk[i].checked) 
-            	{
-                	count++;
-            	}
-        	}
-    	}
-    	if(count==0) 
-   		{
-        	alert("请选择要删除的留言！");
-        	return  false;
-   	 	}
-   	 	if(confirm("操作不可恢复,您确定删除吗？"))
-    	{
-    		document.frmAction.action = "delete";
-    		document.frmAction.submit();
-    	}
-	}
 
-	function delSingle(id) 
-	{
-    	if(confirm("操作不可恢复,您确定删除吗？"))
-    	{
-        	location.href='delete?checkID='+id;
-    	}
-	}
-
-	function selectAll(allSelect) 
-	{
-    	var chk = document.all["checkID"];
-    	if(chk == null) 
-    	{
-        	return  false;
-    	}
-    	if(chk[0] == null) 
-    	{
-       		chk.checked = allSelect.checked;
-    	}
-    	else 
-    	{
-        	for(i=0;i<chk.length;i++) 
-        	{
-           	 	chk[i].checked = allSelect.checked;
-        	}
-    	}
-	}	
-	function pageQuery(page) 
-	{
-		document.all("pageView.currentpage").value=page;   
-		document.all("frmAction").submit();
-	}
-</script>
 </head>
 <body>
 <form name="frmAction" method="post" action="list">
@@ -137,7 +14,7 @@
           ID
    		  <input name="entity.id" type="text" id="entity.id" value="${entity.id}"/>
           <c:if test="${entity.id==0}">
-           <script>document.all["entity.id"].value=""</script>
+           <script>document.getElementById("entity.id").value=""</script>
           </c:if>
           <input type="submit" name="button" id="button" value="直接定位" />
    		  状态

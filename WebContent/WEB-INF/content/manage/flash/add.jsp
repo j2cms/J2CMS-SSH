@@ -8,22 +8,22 @@
 <link href="../../css/bodystyle.css" rel="stylesheet" type="text/css"/>
 <script>
 function checkForm() {
-	if(document.all("entity.title").value.length==0) {
+	if(document.getElementById("entity.title").value.length==0) {
 		alert("标题不能为空!");
-		document.all("entity.title").focus();
+		document.getElementById("entity.title").focus();
 		return false;
 	}
-	if(document.all("entity.imageURL").value.length==0) {
+	if(document.getElementById("entity.imageURL").value.length==0) {
 		alert("图片地址不能为空!");
-		document.all("entity.imageURL").focus();
+		document.getElementById("entity.imageURL").focus();
 		return false;
 	}
-	if(document.all("entity.linkURL").value.length==0) {
+	if(document.getElementById("entity.linkURL").value.length==0) {
 		alert("链接地址不能为空!");
-		document.all("entity.linkURL").focus();
+		document.getElementById("entity.linkURL").focus();
 		return false;
 	}
-	document.all("frmAction").submit();
+	document.getElementById("frmAction").submit();
 }
 function back() {
 	history.go(-1);

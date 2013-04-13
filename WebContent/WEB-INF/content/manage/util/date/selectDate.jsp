@@ -25,7 +25,7 @@
 <head><title>Ñ¡ÔñÈÕÆÚ</title></head>
 <script language="javascript">
 function change() {
-	updateDate(document.all["year"].value,document.all["month"].value,<%=day%>);
+	updateDate(document.getElementById("year").value,document.getElementById("month").value,<%=day%>);
 }
 	
 function updateDate(year,month,theDay){
@@ -70,7 +70,7 @@ function updateDate(year,month,theDay){
 }
 function selDate(obj) {
 	if(obj.innerText=="") return false;
-	result = document.all["year"].value+"-"+(parseInt(document.all["month"].value)+1)+"-"+obj.innerText;
+	result = document.getElementById("year").value+"-"+(parseInt(document.getElementById("month").value)+1)+"-"+obj.innerText;
 	window.returnValue = result;
 	window.close();
 }
@@ -80,12 +80,12 @@ function changeYear(){
 	}
 }
 function addYear() {
-	document.all["year"].value = 1+parseInt(document.all["year"].value);
+	document.getElementById("year").value = 1+parseInt(document.getElementById("year").value);
 	change();
 }
 
 function minusYear() {
-	document.all["year"].value = parseInt(document.all["year"].value)-1;
+	document.getElementById("year").value = parseInt(document.getElementById("year").value)-1;
 	change();
 }
 
@@ -196,7 +196,7 @@ function minusYear() {
 </html>
 <script language="javascript">
 //alert("ff999");
-var  month = document.all["month"];
+var  month = document.getElementById("month");
 month.selectedIndex = <%=month%>;
 updateDate(<%=year%>,<%=month%>,<%=day%>);
 </script>

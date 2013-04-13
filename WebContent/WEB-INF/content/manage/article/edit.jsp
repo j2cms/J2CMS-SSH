@@ -9,7 +9,7 @@
 
 </head>
 <body>
-	<form name="addForm" method="post" action="update">
+	<form name="frmAction" id ="frmAction"  method="post" action="update">
 		  <input name="selector.id" type="hidden" id="selector.id" value="${selector.id}" />
 		  <input name="selector.title" type="hidden" id="selector.title" value="${selector.title}" />
 		  <input name="selector.channel.id" type="hidden" id="selector.channel.id" value="${selector.channel.id}" />

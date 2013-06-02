@@ -30,6 +30,10 @@ MySQL 5.5
 
 what's new
 =================================
+2013.05.20
+1.全新后台界面风格
+2.若干bug修正
+=================================
 2013.03.23
 1.更新J2CMS-SSH的jar包,包括sping,hibernate,struts等全部更新到最新
 2.修正AdminLoginValidateFilter的Bug，适应tomcat6

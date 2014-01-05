@@ -48,7 +48,7 @@
 														<td align="center"><input type='checkbox' name='ids' value='<c:out value="${entity.id}" />' /></td>
 														<td align="center"><c:out value="${entity.id}" /></td>
 														<td align="center"><c:out value="${entity.title}" /></td>
-														<td align="center"><a href="${entity.imageURL}" title="点击查看大图" target="_blank"><img src="${entity.imageURL}" height="50px" border="0" alt="图片已经丢失,请重新上传" /></a></td>
+														<td align="center"><a href="${C.ctp}${entity.imageURL}" title="点击查看大图" target="_blank"><img src="${C.ctp}${entity.imageURL}" height="50px" border="0" alt="图片已经丢失,请重新上传" /></a></td>
 														<td align="center"><a href="${entity.linkURL}" target="_blank"><c:out value="${entity.linkURL}" /></a></td>
 														<td align="center"><c:if test="${entity.checkState=='pass'}">
 																<img src="../../images/yes.gif" title="已审核" />

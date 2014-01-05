@@ -100,7 +100,7 @@
 													</tr>
 													<tr>
 														<td align="right" nowrap>标题缩略图：</td>
-														<td colspan="2"><input name="entity.titleImg" type="text" id="entity.titleImg" size=40 maxlength="80" style="display:" value="${entity.contentImg}" /></td>
+														<td colspan="2"><input name="entity.titleImg" type="text" id="entity.titleImg" size=40 maxlength="80" style="display:" value="${entity.titleImg}" /></td>
 													</tr>
 													<tr>
 														<td align="right">内容缩略图：</td>

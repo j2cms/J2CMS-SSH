@@ -80,6 +80,10 @@
 																<td><input size="40" type="text" name="config.company" id="config.company" value="${config.company}" /></td>
 															</tr>
 															<tr>
+																<td align="right">公司地址：</td>
+																<td><input size="40" type="text" name="config.address" id="config.address" value="${config.address}" /></td>
+															</tr>
+															<tr>
 																<td align="right">版权信息：</td>
 																<td><input size="40" type="text" name="config.copyright" id="config.copyright" value="${config.copyright}" /></td>
 															</tr>

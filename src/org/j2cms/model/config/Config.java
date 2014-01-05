@@ -64,6 +64,9 @@ public class Config implements Serializable {
 	private String path=null;//模版路径
 	@Transient
 	private String configStr="";//字符串化表示
+	
+	@Column(length = 100)
+	private String address; // 公司地址
 
 	
 	public Integer getId() {
@@ -207,6 +210,13 @@ public class Config implements Serializable {
 	}
 	public void setPath(String path) {
 		this.path = path;
+	}
+	
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
 	}
 	public String getConfigStr() throws UnknownHostException {
 		configStr="config.ip="+ip+"&config.uuid="+uuid+"&config.domain="+domain+"&config.name="+name+"&config.fullName="+fullName+"&config.ceo="+ceo+"&config.company="+company+"&config.QQ="+QQ+"&config.tel="+tel+"&config.mobile="+mobile+"&config.email="+email+"&config.template="+template+"&config.recordCode="+recordCode+"&config.version="+version;

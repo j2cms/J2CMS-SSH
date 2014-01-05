@@ -281,12 +281,14 @@ public class ChannelAction extends EntityAction<Channel> {
 		}
 		else{
 			PageView<Article> pageView = new PageView<Article>(1); 
+			
 			int firstindex = (pageView.getCurrentpage()-1)*pageView.getMaxresult();
 			LinkedHashMap<String, String> orderby = new LinkedHashMap<String, String>();
 			List<Object> params = new ArrayList<Object>();
 			QueryResult<Article> qr ;
 			
 			orderby.put("id", "desc");
+			
 			StringBuffer jpql = new StringBuffer("o.checkState=?1");
 			params.add(CheckState.pass);
 			if(id!=0&&id!=1){

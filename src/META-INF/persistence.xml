@@ -7,9 +7,9 @@
       <properties>
          <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/> 
          <property name="hibernate.connection.driver_class" value="org.gjt.mm.mysql.Driver"/>		
-		 <property name="hibernate.connection.username" value="dnzmj"/>
-		 <property name="hibernate.connection.password" value="123456"/>
-		 <property name="hibernate.connection.url" value="jdbc:mysql://127.0.0.1:3306/dnzmj?characterEncoding=utf-8"/>
+		 <property name="hibernate.connection.username" value="j2cms-ssh"/>
+		 <property name="hibernate.connection.password" value="password"/>
+		 <property name="hibernate.connection.url" value="jdbc:mysql://127.0.0.1:3306/j2cms-ssh?characterEncoding=utf-8"/>
          <property name="hibernate.hbm2ddl.auto" value="update"/>
 	     <property name="hibernate.show_sql" value="true"/>
 	     <property name="hibernate.format_sql" value="true"/> 
